@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "StudentRegistration.Model/1.0.0": {
+        "runtime": {
+          "StudentRegistration.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StudentRegistration.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

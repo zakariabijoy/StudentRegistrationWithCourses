@@ -7,8 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using StudentRegistration.DataAccess;
 using StudentRegistration.DataAccess.Repository;
-using StudentRegistration.DataAccess.Repository.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace StudentRegistration.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ICourseRepository, CourseRepository>();
+            services.AddDataAccessServices();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

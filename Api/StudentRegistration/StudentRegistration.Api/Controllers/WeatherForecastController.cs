@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using StudentRegistration.DataAccess.Repository.IRepository;
 using StudentRegistration.Model;
 using System;
 using System.Collections.Generic;
@@ -20,18 +19,18 @@ namespace StudentRegistration.Api.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly ICourseRepository _courseRepo;
+        
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, ICourseRepository courseRepo)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
-            _courseRepo = courseRepo;
+            
         }
 
         [HttpGet]
         public IEnumerable<Course> Get()
         {
-          return  _courseRepo.GetAll();
+            return null;
         }
     }
 }

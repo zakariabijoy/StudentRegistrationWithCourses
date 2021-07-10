@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Wp2Nuq4uSttXCgWfD0owdRgxmpwBz5xWPGlDgzkYsIzhJ5nFuLfw1APzoCqLBfSdl6PG4kh4oVQWLB+2xed7cQ==",
+  "dgSpecHash": "1tLfb7JlDu3g+wJ3iZhFOiSfgR2noC9htimRioJQcNCWphmsIKkI6/wh+hK0JbUIdVLtdDu6OLvimNMZSRF/iw==",
   "success": true,
   "projectFilePath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zakaria\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

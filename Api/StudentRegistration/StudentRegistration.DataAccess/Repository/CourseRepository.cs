@@ -1,6 +1,6 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Configuration;
-using StudentRegistration.DataAccess.Repository.IRepository;
+using StudentRegistration.DataAccess.Repository.Interfaces;
 using StudentRegistration.Model;
 using System;
 using System.Collections.Generic;
@@ -19,33 +19,28 @@ namespace StudentRegistration.DataAccess.Repository
         {
             db = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
         }
-        public Course Add(Course course)
+        public Task<int> AddAsync(Course entity)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Course> AddAsync(Course course)
+        public Task<int> DeleteAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Course Find(int id)
+        public async Task<List<Course>> GetAllAsync()
+        {
+            var result = await db.QueryAsync<Course>("usp_GetALLCourse", commandType: CommandType.StoredProcedure);
+            return result.ToList();
+        }
+
+        public Task<Course> GetByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Course> GetAll()
-        {
-            var sql = "SELECT * FROM Courses";
-            return db.Query<Course>(sql).ToList();
-        }
-
-        public void Remove(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Course Update(Course course)
+        public Task<int> UpdateAsync(Course entity)
         {
             throw new NotImplementedException();
         }

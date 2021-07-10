@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BtFQTLRn3JQ012I2+c7pUVqvkyQ5zdboeqdJJBRxvgoCaJO05pYHgAT+5y84cuBG16dlLljWyRgVFcQ1FwzTgA==",
+  "dgSpecHash": "rLWbOlsPhyLeGsLXjxmu52MeYstZIJYgXMJiXw9INd4xWJz350LI2LyNc7/yS3BzwXp/vpo8Z10smY65YjAeZw==",
   "success": true,
   "projectFilePath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zakaria\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -61,9 +61,30 @@ namespace StudentRegistration.DataAccess.Repository
             throw new NotImplementedException();
         }
 
-        public Task<List<Student>> GetAllAsync()
+        public async Task<List<Student>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var sql = @"select s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth, c.CourseId, c.Name, c.Credit
+                        from Students s
+                        inner join
+                        StudentCourse sc on sc.StudentId = s.StudentId
+                        inner join 
+                        Courses c on c.CourseId = sc.CourseId;";
+
+            var studentDic = new Dictionary<int, Student>(); 
+
+            var students = await db.QueryAsync<Student, Course, Student>(sql, (s, c) => {         
+
+                if (!studentDic.TryGetValue(s.StudentId, out var currentStudent))
+                {
+                    currentStudent = s;
+                    studentDic.Add(currentStudent.StudentId, currentStudent);
+                }
+
+                currentStudent.CourseList.Add(c);
+                return currentStudent;
+            }, splitOn: "CourseId");
+
+            return students.Distinct().ToList();
         }
 
         public Task<Student> GetByIdAsync(int id)

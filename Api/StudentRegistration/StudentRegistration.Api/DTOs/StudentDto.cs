@@ -18,6 +18,7 @@ namespace StudentRegistration.Api.DTOs
         [Required]
         public DateTime DateOfBirth { get; set; }
         [Required]
+        [MinLength(1)]
         public List<int> CourseCheckBoxList { get; set; }
     }
 }

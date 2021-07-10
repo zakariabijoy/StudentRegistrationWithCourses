@@ -14,7 +14,7 @@ namespace StudentRegistration.Model
         public string Gender { get; set; }
         public DateTime DateOfBirth { get; set; }
 
-        public IList<Course> CourseList { get; set; }
+        public List<Course> CourseList { get; set; } = new List<Course>();
 
     }
 }

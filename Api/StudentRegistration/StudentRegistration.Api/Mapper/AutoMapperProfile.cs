@@ -20,6 +20,13 @@ namespace StudentRegistration.Api.Mapper
                                                     .ForMember(d => d.Name, opt => opt.MapFrom(s => s.Title))
                                                             .ForMember(d => d.Credit, opt => opt.MapFrom(s => s.Credit));
 
+            CreateMap<StudentDto, Student>().ForMember(d => d.StudentId, opt => opt.MapFrom(s => s.StudentId))
+                                                .ForMember(d => d.Name, opt => opt.MapFrom(s => s.Name))
+                                                .ForMember(d => d.RegNo, opt => opt.MapFrom(s => s.RegNo))
+                                                .ForMember(d => d.DateOfBirth, opt => opt.MapFrom(s => s.DateOfBirth))
+                                                .ForMember(d => d.Gender, opt => opt.MapFrom(s => s.Gender));
+                                                
+
 
         }
     }

@@ -29,8 +29,25 @@
             formControlName="regNo"
             placeholder="Registration No"
           />
-          <div class="invalid-feedback">
+          <div
+            *ngIf="registerForm.get('regNo').errors?.required"
+            class="invalid-feedback"
+          >
             Please Enter Student unique registration Number
+          </div>
+          <div
+            *ngIf="registerForm.get('regNo').errors?.minlength"
+            class="invalid-feedback"
+          >
+            Minlength is
+            {{ registerForm.get("regNo").errors.minlength["requiredLength"] }}
+          </div>
+          <div
+            *ngIf="registerForm.get('regNo').errors?.maxlength"
+            class="invalid-feedback"
+          >
+            Maxlength is
+            {{ registerForm.get("regNo").errors.maxlength["requiredLength"] }}
           </div>
         </div>
         <div class="form-group">

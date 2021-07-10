@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using StudentRegistration.Api.DTOs;
 using StudentRegistration.DataAccess.Repository.Interfaces;
 using StudentRegistration.Model;
@@ -16,16 +17,19 @@ namespace StudentRegistration.Api.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public StudentsController(IUnitOfWork unitOfWork)
+        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
         // GET: api/<StudentsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            var students =  await _unitOfWork.Students.GetAllAsync();
+            return Ok(students);
         }
 
         // GET api/<StudentsController>/5
@@ -45,24 +49,23 @@ namespace StudentRegistration.Api.Controllers
                 {
                     return BadRequest("this Student Already Exists");
 
-                   
                 }
                 else
                 {
                     var courses = await _unitOfWork.Courses.GetByIdListAsync(studentDto.CourseCheckBoxList);
-
-                    Student student = new Student()
+                    if(courses.Count > 0)
                     {
-                        StudentId = studentDto.StudentId,
-                        Name = studentDto.Name,
-                        RegNo = studentDto.RegNo,
-                        DateOfBirth = studentDto.DateOfBirth,
-                        Gender = studentDto.Gender,
-                        CourseList = courses,
-                    };
+                        var student = _mapper.Map<Student>(studentDto);
+                        student.CourseList = courses;
 
-                   var id = await _unitOfWork.Students.AddAsync(student);
-                    return Ok(id);
+                        var id = await _unitOfWork.Students.AddAsync(student);
+                        return Ok(id);
+                    }
+                    else
+                    {
+                        return BadRequest("No Course Is Selected");
+                    }
+                    
                 }
             }
 

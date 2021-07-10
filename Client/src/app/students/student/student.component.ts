@@ -6,6 +6,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { CourseCheckBox } from 'src/app/models/courseCheckBox.model';
 import { CourseService } from 'src/app/services/course.service';
 import { StudentService } from 'src/app/services/student.service';
@@ -22,7 +23,8 @@ export class StudentComponent implements OnInit {
   constructor(
     public studentService: StudentService,
     private courseService: CourseService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private toastr: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -37,7 +39,11 @@ export class StudentComponent implements OnInit {
       name: ['', Validators.required],
       regNo: [
         '',
-        [Validators.required, Validators.minLength(4), Validators.maxLength(8)],
+        [
+          Validators.required,
+          Validators.minLength(4),
+          Validators.maxLength(10),
+        ],
       ],
       gender: ['male', Validators.required],
       dateOfBirth: ['', [Validators.required]],
@@ -72,6 +78,7 @@ export class StudentComponent implements OnInit {
         (res) => {
           console.log(res);
           this.validationErrors = [];
+          this.toastr.success('Student registration is successfully done');
         },
         (error) => {
           console.log(error);

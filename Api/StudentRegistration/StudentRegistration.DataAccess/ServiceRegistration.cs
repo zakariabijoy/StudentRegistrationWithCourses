@@ -14,7 +14,8 @@ namespace StudentRegistration.DataAccess
         public static void AddDataAccessServices(this IServiceCollection services)
         {
             services.AddScoped<ICourseRepository, CourseRepository>();
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }
 }

@@ -40,6 +40,12 @@ namespace StudentRegistration.DataAccess.Repository
             throw new NotImplementedException();
         }
 
+        public async Task<List<Course>> GetByIdListAsync(List<int> id)
+        {
+            var result = await  db.QueryAsync<Course>("select * from Courses where CourseId in @id",new {id });
+            return result.ToList();
+        }
+
         public Task<int> UpdateAsync(Course entity)
         {
             throw new NotImplementedException();

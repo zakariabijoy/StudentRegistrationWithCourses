@@ -38,6 +38,12 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration.Api\StudentRegistration.Api\obj\Debug\net5.0\ref\StudentRegistration.Api.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration.Api\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.pdb
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration.Api\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.genruntimeconfig.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.AssemblyInfo.cs
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.AssemblyInfoInputs.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.CoreCompileInputs.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.AssemblyReference.cache
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\appsettings.Development.json
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\appsettings.json
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.exe
@@ -47,6 +53,8 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\ref\StudentRegistration.Api.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.pdb
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\AutoMapper.dll
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Dapper.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -62,13 +70,6 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Model.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.DataAccess.pdb
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Model.pdb
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.AssemblyReference.cache
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.GeneratedMSBuildEditorConfig.editorconfig
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.AssemblyInfoInputs.cache
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.AssemblyInfo.cs
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.CoreCompileInputs.cache
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cs
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cache
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\staticwebassets\StudentRegistration.Api.StaticWebAssets.Manifest.cache
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\staticwebassets\StudentRegistration.Api.StaticWebAssets.xml
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\scopedcss\bundle\StudentRegistration.Api.styles.css
@@ -78,5 +79,3 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\ref\StudentRegistration.Api.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.pdb
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.genruntimeconfig.cache
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\AutoMapper.dll
-F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

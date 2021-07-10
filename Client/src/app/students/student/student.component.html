@@ -1,1 +1,110 @@
-<form #studnetForm="ngForm"></form>
+<form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()">
+  <h2 class="text-center text-primary">Register Student</h2>
+  <hr />
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <input
+            [class.is-invalid]="
+              registerForm.get('name').errors &&
+              registerForm.get('name').touched
+            "
+            type="text"
+            class="form-control"
+            formControlName="name"
+            placeholder="Student Name"
+          />
+          <div class="invalid-feedback">Please Enter a Student Name</div>
+        </div>
+
+        <div class="form-group">
+          <input
+            [class.is-invalid]="
+              registerForm.get('regNo').errors &&
+              registerForm.get('regNo').touched
+            "
+            type="text"
+            class="form-control"
+            formControlName="regNo"
+            placeholder="Registration No"
+          />
+          <div class="invalid-feedback">
+            Please Enter Student unique registration Number
+          </div>
+        </div>
+        <div class="form-group">
+          <select
+            [class.is-invalid]="
+              registerForm.get('gender').errors &&
+              registerForm.get('gender').touched
+            "
+            formControlName="gender"
+            class="form-control"
+          >
+            <option value="" disabled>--Select Gender--</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="common">Common</option>
+          </select>
+          <div class="invalid-feedback">Please Enter Student Gender</div>
+        </div>
+
+        <div class="form-group">
+          <input
+            [class.is-invalid]="
+              registerForm.get('dateOfBirth').errors &&
+              registerForm.get('dateOfBirth').touched
+            "
+            type="date"
+            class="form-control"
+            formControlName="dateOfBirth"
+            placeholder="Date Of Birth"
+          />
+          <div class="invalid-feedback">Please Enter Student Date Of Birth</div>
+        </div>
+        <div *ngIf="validationErrors.length > 0">
+          <ul class="text-danger">
+            <li *ngFor="let error of validationErrors">{{ error }}</li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <button
+            class="btn btn-success"
+            type="submit"
+            [disabled]="!registerForm.valid"
+          >
+            Register
+          </button>
+          <button class="btn btn-default mr-2" type="button" (click)="cancel()">
+            Cancel
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-1">
+            <div style="border-left: 2px solid black; height: 150px"></div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="form-check"
+              *ngFor="
+                let checkbox of this.studentService.courseCheckBoxList;
+                let i = index
+              "
+            >
+              <input
+                type="checkbox"
+                [value]="checkbox.id"
+                class="form-check-input"
+                (change)="onCheckboxChange($event)"
+              />
+              <label class="form-check-label">{{ checkbox.title }}</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,9 +1,9 @@
-import { CourseCheckBox } from "./courseCheckBox.model";
+import { CourseCheckBox } from './courseCheckBox.model';
 
-export interface Student{
-    id:number;
-    name:string;
-    regNo:number;
-    dateOfbirth: Date;
-    courseCheckBoxList: CourseCheckBox[]
+export interface Student {
+  id: number;
+  name: string;
+  regNo: number;
+  gender:string;
+  dateOfBirth: Date;
 }

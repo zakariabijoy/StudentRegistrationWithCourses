@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using StudentRegistration.Api.DTOs;
 using StudentRegistration.DataAccess.Repository.Interfaces;
 using StudentRegistration.Model;
 using System;
@@ -15,16 +17,19 @@ namespace StudentRegistration.Api.Controllers
     public class CoursesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public CoursesController(IUnitOfWork unitOfWork)
+        public CoursesController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
         // GET: api/<CoursesController>
         [HttpGet]
-        public async Task<ActionResult<Course>> Get()
+        public async Task<ActionResult<List<CourseCheckBoxDto>>> Get()
         {
-          var result =  await _unitOfWork.Courses.GetAllAsync();
+          var courses =  await _unitOfWork.Courses.GetAllAsync();
+          var result=  _mapper.Map<List<CourseCheckBoxDto>>(courses);
             return Ok(result);
         }
 

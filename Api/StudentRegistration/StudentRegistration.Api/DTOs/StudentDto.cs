@@ -20,5 +20,7 @@ namespace StudentRegistration.Api.DTOs
         [Required]
         [MinLength(1)]
         public List<int> CourseCheckBoxList { get; set; }
+
+        public List<CourseCheckBoxDto> CourseCheckBoxes { get; set; } = new List<CourseCheckBoxDto>();
     }
 }

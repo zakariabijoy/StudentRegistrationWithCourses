@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using StudentRegistration.Api.DTOs;
+using StudentRegistration.Utility.Helper;
 using StudentRegistration.DataAccess.Repository.Interfaces;
 using StudentRegistration.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using StudentRegistration.Utility.Extenstions;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -26,17 +28,41 @@ namespace StudentRegistration.Api.Controllers
         }
         // GET: api/<StudentsController>
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery] StudentsParams studentsParams)
         {
-            var students =  await _unitOfWork.Students.GetAllAsync();
+            var students = await _unitOfWork.Students.GetAllAsyncWithPaginationAsync(studentsParams);
+            Response.AddPaginationHeader(students.CurrentPage, students.PageSize, students.TotalCount, students.TotalPages);
             return Ok(students);
         }
 
         // GET api/<StudentsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            return "value";
+            if (id > 0)
+            {
+                var student = await _unitOfWork.Students.GetByIdAsync(id);
+                if (student != null)
+                {
+                    var stuDto = _mapper.Map<StudentDto>(student);
+                    stuDto.CourseCheckBoxes = _mapper.Map<List<CourseCheckBoxDto>>(student.CourseList);
+                    foreach (var item in stuDto.CourseCheckBoxes)
+                    {
+                        item.Ischecked = true;
+                    }
+                    return Ok(stuDto);
+                }
+                else
+                {
+                    return NotFound("Student Not Found");
+                }
+            }
+            else
+            {
+                return BadRequest("This Student Id is invalid");
+            }
+           
+
         }
 
         // POST api/<StudentsController>
@@ -80,8 +106,25 @@ namespace StudentRegistration.Api.Controllers
 
         // DELETE api/<StudentsController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            if(id > 0)
+            {
+                var deletedId = await _unitOfWork.Students.DeleteAsync(id);
+                
+                if(deletedId != 0)
+                {
+                    return Ok(deletedId);
+                }
+                else
+                {
+                    return NotFound("Student not found to delete");
+                }
+                
+            }
+            
+            return BadRequest("This Student Id is invalid");
+            
         }
     }
 }

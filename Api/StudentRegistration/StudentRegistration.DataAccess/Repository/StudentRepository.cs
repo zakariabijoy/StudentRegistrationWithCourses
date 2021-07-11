@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 using StudentRegistration.Model;
+using StudentRegistration.Utility.Helper;
 
 namespace StudentRegistration.DataAccess.Repository
 {
@@ -56,9 +57,21 @@ namespace StudentRegistration.DataAccess.Repository
                 }
         }
 
-        public Task<int> DeleteAsync(int id)
+        public async Task<int> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            using var transection = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+            var sql = @"delete from StudentCourse where StudentId = @id;
+                            delete from Students where StudentId = @id;";
+             var deletedId = await  db.ExecuteAsync(sql, new { id });
+            transection.Complete();
+            if(deletedId > 0)
+            {
+                return deletedId;
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public async Task<List<Student>> GetAllAsync()
@@ -87,9 +100,57 @@ namespace StudentRegistration.DataAccess.Repository
             return students.Distinct().ToList();
         }
 
-        public Task<Student> GetByIdAsync(int id)
+        public async Task<PagedList<Student>> GetAllAsyncWithPaginationAsync(StudentsParams studentsParams)
         {
-            throw new NotImplementedException();
+            var sql = @"select s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth, c.CourseId, c.Name, c.Credit
+                        from Students s
+                        inner join
+                        StudentCourse sc on sc.StudentId = s.StudentId
+                        inner join 
+                        Courses c on c.CourseId = sc.CourseId;";
+
+            var studentDic = new Dictionary<int, Student>();
+
+            var students = await db.QueryAsync<Student, Course, Student>(sql, (s, c) => {
+
+                if (!studentDic.TryGetValue(s.StudentId, out var currentStudent))
+                {
+                    currentStudent = s;
+                    studentDic.Add(currentStudent.StudentId, currentStudent);
+                }
+
+                currentStudent.CourseList.Add(c);
+                return currentStudent;
+            }, splitOn: "CourseId");
+
+            return PagedList<Student>.Create(students.Distinct().AsQueryable(),studentsParams.PageNumber, studentsParams.pageSize);
+        }
+
+        public async Task<Student> GetByIdAsync(int id)
+        {
+            var sql = @"select s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth, c.CourseId, c.Name, c.Credit
+                        from Students s
+                        inner join
+                        StudentCourse sc on sc.StudentId = s.StudentId
+                        inner join 
+                        Courses c on c.CourseId = sc.CourseId
+                        where s.StudentId = @id;";
+
+            var studentDic = new Dictionary<int, Student>();
+
+            var students = await db.QueryAsync<Student, Course, Student>(sql, (s, c) => {
+
+                if (!studentDic.TryGetValue(s.StudentId, out var currentStudent))
+                {
+                    currentStudent = s;
+                    studentDic.Add(currentStudent.StudentId, currentStudent);
+                }
+
+                currentStudent.CourseList.Add(c);
+                return currentStudent;
+            },new {id }, splitOn: "CourseId");
+
+            return students.Distinct().FirstOrDefault();
         }
 
         public bool IfStudentExists(int regNo)

@@ -80,3 +80,5 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.pdb
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.genruntimeconfig.cache
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cs
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Utility.dll
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Utility.pdb

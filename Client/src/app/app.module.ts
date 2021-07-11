@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { StudentComponent } from './students/student/student.component';
 import { StudentsComponent } from './students/students.component';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [AppComponent, StudentsComponent, StudentComponent],
@@ -20,6 +21,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

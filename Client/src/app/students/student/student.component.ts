@@ -6,6 +6,7 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CourseCheckBox } from 'src/app/models/courseCheckBox.model';
 import { CourseService } from 'src/app/services/course.service';
@@ -19,36 +20,66 @@ import { StudentService } from 'src/app/services/student.service';
 export class StudentComponent implements OnInit {
   registerForm: FormGroup;
   validationErrors: string[] = [];
+  data: {};
 
   constructor(
     public studentService: StudentService,
     private courseService: CourseService,
     private fb: FormBuilder,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private router: Router,
+    private activeRoute: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
-    this.courseService.getCourse().subscribe((res) => {
-      this.studentService.courseCheckBoxList = res as CourseCheckBox[];
-    });
-    this.initializeForm();
+    let studentId = this.activeRoute.snapshot.paramMap.get('id');
+
+    if (studentId === null) {
+      this.courseService.getCourse().subscribe((res) => {
+        this.studentService.courseCheckBoxList = res as CourseCheckBox[];
+      });
+      this.initializeForm();
+    } else {
+      this.studentService.getStudent(parseInt(studentId)).subscribe((res) => {
+        this.data = res;
+        this.initializeForm(this.data);
+      });
+    }
   }
 
-  initializeForm() {
-    this.registerForm = this.fb.group({
-      name: ['', Validators.required],
-      regNo: [
-        '',
-        [
-          Validators.required,
-          Validators.minLength(4),
-          Validators.maxLength(10),
+  initializeForm(data?: any) {
+    console.log(data);
+    if (data) {
+      this.registerForm = this.fb.group({
+        name: [data.name, Validators.required],
+        regNo: [
+          data.regNo,
+          [
+            Validators.required,
+            Validators.minLength(4),
+            Validators.maxLength(10),
+          ],
         ],
-      ],
-      gender: ['male', Validators.required],
-      dateOfBirth: ['', [Validators.required]],
-      courseCheckBoxList: this.fb.array([]),
-    });
+        gender: [data.gender, Validators.required],
+        dateOfBirth: [data.dateOfBirth, [Validators.required]],
+        courseCheckBoxList: this.fb.array(data.courseCheckBoxes),
+      });
+    } else {
+      this.registerForm = this.fb.group({
+        name: ['', Validators.required],
+        regNo: [
+          '',
+          [
+            Validators.required,
+            Validators.minLength(4),
+            Validators.maxLength(10),
+          ],
+        ],
+        gender: ['male', Validators.required],
+        dateOfBirth: ['', [Validators.required]],
+        courseCheckBoxList: this.fb.array([]),
+      });
+    }
   }
   onCheckboxChange(e) {
     const courseCheckBoxList: FormArray = this.registerForm.get(
@@ -78,6 +109,7 @@ export class StudentComponent implements OnInit {
         (res) => {
           console.log(res);
           this.validationErrors = [];
+          this.router.navigateByUrl('students');
           this.toastr.success('Student registration is successfully done');
         },
         (error) => {
@@ -87,5 +119,7 @@ export class StudentComponent implements OnInit {
       );
     }
   }
-  cancel() {}
+  cancel() {
+    this.router.navigateByUrl('students');
+  }
 }

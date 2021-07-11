@@ -1,0 +1,12 @@
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.GeneratedMSBuildEditorConfig.editorconfig
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.AssemblyInfoInputs.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.AssemblyInfo.cs
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.csproj.CoreCompileInputs.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\StudentRegistration.Utility.deps.json
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\StudentRegistration.Utility.dll
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\ref\StudentRegistration.Utility.dll
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\StudentRegistration.Utility.pdb
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.csproj.AssemblyReference.cache
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.dll
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\ref\StudentRegistration.Utility.dll
+F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.pdb

@@ -1,4 +1,4 @@
-<table class="table table-hover">
+<table class="table table-hover table-border">
   <thead class="thead-light">
     <th>Student Name</th>
     <th>Registration No</th>
@@ -6,21 +6,61 @@
     <th>Date Of Birth</th>
     <th>Courses</th>
     <th>
-      <a class="btn btn-outline-success" routerLink="/order">
+      <a class="btn btn-outline-success" routerLink="/student">
         <i class="fa fa-plus-square"></i> Create New</a
       >
     </th>
   </thead>
   <tbody>
-    <tr *ngFor="let student of this.studentService.studentList">
+    <tr
+      *ngFor="
+        let student of this.Students
+          | paginate
+            : {
+                id: 'listing_pagination',
+                itemsPerPage: this.pageSize,
+                currentPage: this.pageNumber,
+                totalItems: this.count
+              }
+      "
+    >
       <th>{{ student.name }}</th>
       <td>{{ student.regNo }}</td>
       <td>{{ student.gender }}</td>
-      <td>{{ student.dateOfBirth }}</td>
+      <td>{{ student.dateOfBirth | date: "mediumDate" }}</td>
       <td>
         <li *ngFor="let item of student.courseList">{{ item.name }}</li>
       </td>
-      <td></td>
+      <td>
+        <div class="form-group">
+          <button
+            class="btn btn-sm btn-warning"
+            type="submit"
+            (click)="openForEdit(student.studentId)"
+          >
+            <i class="fa fa-pencil"></i>
+          </button>
+          <button class="btn btn-sm btn-danger ml-1" type="button" (click)="DeleteStudent(student.studentId)">
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </td>
     </tr>
   </tbody>
 </table>
+
+<pagination-controls
+  class="text-right"
+  id="listing_pagination"
+  (pageChange)="pageChanged($event)"
+  maxSize="10"
+  directionLinks="true"
+  autoHide="true"
+  responsive="true"
+  previousLabel="Previous"
+  nextLabel="Next"
+  screenReaderPaginationLabel="Pagination"
+  screenReaderPageLabel="page"
+  screenReaderCurrentLabel="You're on page"
+>
+</pagination-controls>

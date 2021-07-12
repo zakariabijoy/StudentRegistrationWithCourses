@@ -1,3 +1,4 @@
+import { CourseCheckBox } from './courseCheckBox.model';
 import { CourseDto } from './courseDto.model';
 
 export interface StudentDto {
@@ -7,5 +8,5 @@ export interface StudentDto {
   gender: string;
   dateOfBirth: Date;
   courseList: CourseDto[];
-  coursesName: string;
+  courseCheckBox: CourseCheckBox[];
 }

@@ -11,6 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 import { CourseCheckBox } from 'src/app/models/courseCheckBox.model';
 import { CourseService } from 'src/app/services/course.service';
 import { StudentService } from 'src/app/services/student.service';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-student',
@@ -20,7 +21,7 @@ import { StudentService } from 'src/app/services/student.service';
 export class StudentComponent implements OnInit {
   registerForm: FormGroup;
   validationErrors: string[] = [];
-  data: {};
+  data: any;
 
   constructor(
     public studentService: StudentService,
@@ -28,7 +29,8 @@ export class StudentComponent implements OnInit {
     private fb: FormBuilder,
     private toastr: ToastrService,
     private router: Router,
-    private activeRoute: ActivatedRoute
+    private activeRoute: ActivatedRoute,
+    private datePipe: DatePipe
   ) {}
 
   ngOnInit(): void {
@@ -42,6 +44,9 @@ export class StudentComponent implements OnInit {
     } else {
       this.studentService.getStudent(parseInt(studentId)).subscribe((res) => {
         this.data = res;
+        this.studentService.courseCheckBoxList = this.data
+          .courseCheckBoxes as CourseCheckBox[];
+        console.log(this.studentService.courseCheckBoxList);
         this.initializeForm(this.data);
       });
     }
@@ -61,8 +66,19 @@ export class StudentComponent implements OnInit {
           ],
         ],
         gender: [data.gender, Validators.required],
-        dateOfBirth: [data.dateOfBirth, [Validators.required]],
-        courseCheckBoxList: this.fb.array(data.courseCheckBoxes),
+        dateOfBirth: [
+          this.datePipe.transform(data.dateOfBirth, 'yyyy-MM-dd'),
+          [Validators.required],
+        ],
+        courseCheckBoxList: this.fb.array([]),
+      });
+      const courseCheckBoxList: FormArray = this.registerForm.get(
+        'courseCheckBoxList'
+      ) as FormArray;
+      this.studentService.courseCheckBoxList.forEach((c) => {
+        if (c.ischecked === true) {
+          courseCheckBoxList.push(new FormControl(`${c.id}`));
+        }
       });
     } else {
       this.registerForm = this.fb.group({
@@ -75,7 +91,7 @@ export class StudentComponent implements OnInit {
             Validators.maxLength(10),
           ],
         ],
-        gender: ['male', Validators.required],
+        gender: ['', Validators.required],
         dateOfBirth: ['', [Validators.required]],
         courseCheckBoxList: this.fb.array([]),
       });
@@ -101,22 +117,43 @@ export class StudentComponent implements OnInit {
   }
 
   register() {
-    if (this.registerForm.value.courseCheckBoxList.length <= 0) {
-      this.validationErrors.push('Please Select a course');
+    let studentId = this.activeRoute.snapshot.paramMap.get('id');
+    if (studentId === null) {
+      if (this.registerForm.value.courseCheckBoxList.length <= 0) {
+        this.validationErrors.push('Please Select a course');
+      } else {
+        console.log(this.registerForm.value);
+        this.studentService.onSubmit(this.registerForm.value).subscribe(
+          (res) => {
+            console.log(res);
+            this.validationErrors = [];
+            this.router.navigateByUrl('students');
+            this.toastr.success('Student registration is successfully done');
+          },
+          (error) => {
+            console.log(error);
+            this.validationErrors.push(error.error.title);
+          }
+        );
+      }
     } else {
-      console.log(this.registerForm.value);
-      this.studentService.onSubmit(this.registerForm.value).subscribe(
-        (res) => {
-          console.log(res);
-          this.validationErrors = [];
-          this.router.navigateByUrl('students');
-          this.toastr.success('Student registration is successfully done');
-        },
-        (error) => {
-          console.log(error);
-          this.validationErrors.push(error.error.title);
-        }
-      );
+      if (this.registerForm.value.courseCheckBoxList.length <= 0) {
+        this.validationErrors.push('Please Select a course');
+      } else {
+        console.log(this.registerForm.value);
+        this.studentService.onSubmit(this.registerForm.value).subscribe(
+          (res) => {
+            console.log(res);
+            this.validationErrors = [];
+            this.router.navigateByUrl('students');
+            this.toastr.success('Student registration is successfully done');
+          },
+          (error) => {
+            console.log(error);
+            this.validationErrors.push(error.error.title);
+          }
+        );
+      }
     }
   }
   cancel() {

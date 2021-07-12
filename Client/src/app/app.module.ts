@@ -10,6 +10,7 @@ import { StudentComponent } from './students/student/student.component';
 import { StudentsComponent } from './students/students.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [AppComponent, StudentsComponent, StudentComponent],
@@ -23,7 +24,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ToastrModule.forRoot(),
     NgxPaginationModule,
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

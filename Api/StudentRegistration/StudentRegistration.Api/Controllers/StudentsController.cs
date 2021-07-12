@@ -45,10 +45,17 @@ namespace StudentRegistration.Api.Controllers
                 if (student != null)
                 {
                     var stuDto = _mapper.Map<StudentDto>(student);
-                    stuDto.CourseCheckBoxes = _mapper.Map<List<CourseCheckBoxDto>>(student.CourseList);
-                    foreach (var item in stuDto.CourseCheckBoxes)
+                    stuDto.CourseCheckBoxes = _mapper.Map<List<CourseCheckBoxDto>>(await _unitOfWork.Courses.GetAllAsync());
+                    for (int i = 0; i < stuDto.CourseCheckBoxes.Count ; i++)
                     {
-                        item.Ischecked = true;
+                        for (int j = 0; j < student.CourseList.Count; j++)
+                        {
+                            if (student.CourseList[j].CourseId == stuDto.CourseCheckBoxes[i].Id)
+                            {
+                                stuDto.CourseCheckBoxes[i].Ischecked = true;
+                            }
+                        }
+                       
                     }
                     return Ok(stuDto);
                 }

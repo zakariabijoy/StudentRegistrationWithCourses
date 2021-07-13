@@ -16,6 +16,7 @@ export class StudentsComponent implements OnInit {
   pageNumber = 1;
   pageSize = 5;
   count = 0;
+  searchBy = '';
 
   constructor(
     public studentService: StudentService,
@@ -26,13 +27,18 @@ export class StudentsComponent implements OnInit {
   ngOnInit(): void {
     this.refreshList();
   }
+
+  onSearch() {
+    console.log(this.searchBy);
+    this.refreshList();
+  }
   pageChanged(event: any) {
     this.pageNumber = event;
     this.refreshList();
   }
   refreshList() {
     this.studentService
-      .geStudentList(this.pageNumber, this.pageSize)
+      .geStudentList(this.pageNumber, this.pageSize, this.searchBy)
       .subscribe((res) => {
         console.log(res);
         this.Students = res.result;

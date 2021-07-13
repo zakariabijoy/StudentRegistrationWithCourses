@@ -24,12 +24,13 @@ export class StudentService {
     return this.http.post(environment.apiUrl + 'Students', model);
   }
 
-  geStudentList(page?: number, itemsPerPage?: number) {
+  geStudentList(page?: number, itemsPerPage?: number, searchBy?:string) {
     let params = new HttpParams();
 
     if (page !== null && itemsPerPage !== null) {
       params = params.append('pageNumber', page.toString());
       params = params.append('pageSize', itemsPerPage.toString());
+      params = params.append('searchBy', searchBy);
     }
 
     return this.http

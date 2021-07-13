@@ -1,3 +1,15 @@
+<div class="row mb-2 mt-4">
+  <div class="col-md-6 offset-md-6">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search By Student Name...."
+      [(ngModel)]="this.searchBy"
+      (keyup)="onSearch()"
+    />
+  </div>
+</div>
+
 <table class="table table-hover table-border">
   <thead class="thead-light">
     <th>Student Name</th>

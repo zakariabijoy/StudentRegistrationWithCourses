@@ -101,8 +101,17 @@
             class="btn btn-success"
             type="submit"
             [disabled]="!registerForm.valid"
+            *ngIf="this.registerForm.get('studentId')"
           >
-            Save
+            Update
+          </button>
+          <button
+            class="btn btn-success"
+            type="submit"
+            [disabled]="!registerForm.valid"
+            *ngIf="!this.registerForm.get('studentId')"
+          >
+            Register
           </button>
           <button class="btn btn-default mr-2" type="button" (click)="cancel()">
             Cancel

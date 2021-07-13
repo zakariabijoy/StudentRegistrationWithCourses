@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj": {}
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj": {}
   },
   "projects": {
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj": {
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
+        "projectUniqueName": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
         "projectName": "StudentRegistration.Api",
-        "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
+        "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
         "packagesPath": "C:\\Users\\Zakaria\\.nuget\\packages\\",
-        "outputPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\obj\\",
+        "outputPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zakaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj": {
-                "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj"
+              "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj": {
+                "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj"
               },
-              "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj": {
-                "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj"
+              "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj": {
+                "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj"
               },
-              "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
-                "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj"
+              "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
+                "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj": {
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj",
+        "projectUniqueName": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj",
         "projectName": "StudentRegistration.DataAccess",
-        "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj",
+        "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\StudentRegistration.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Zakaria\\.nuget\\packages\\",
-        "outputPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\obj\\",
+        "outputPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zakaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,11 +105,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj": {
-                "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj"
+              "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj": {
+                "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj"
               },
-              "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
-                "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj"
+              "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
+                "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj": {
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj",
+        "projectUniqueName": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj",
         "projectName": "StudentRegistration.Model",
-        "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj",
+        "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\StudentRegistration.Model.csproj",
         "packagesPath": "C:\\Users\\Zakaria\\.nuget\\packages\\",
-        "outputPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\obj\\",
+        "outputPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zakaria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -214,14 +214,14 @@
         }
       }
     },
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
+        "projectUniqueName": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
         "projectName": "StudentRegistration.Utility",
-        "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
+        "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
         "packagesPath": "C:\\Users\\Zakaria\\.nuget\\packages\\",
-        "outputPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\obj\\",
+        "outputPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zakaria\\AppData\\Roaming\\NuGet\\NuGet.Config",

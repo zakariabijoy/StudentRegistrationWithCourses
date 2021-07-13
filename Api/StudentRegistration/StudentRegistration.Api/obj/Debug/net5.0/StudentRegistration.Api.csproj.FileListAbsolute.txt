@@ -82,3 +82,47 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cs
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Utility.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\appsettings.Development.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\appsettings.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.exe
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.deps.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.runtimeconfig.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.runtimeconfig.dev.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\ref\StudentRegistration.Api.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Api.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\AutoMapper.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Dapper.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\System.Data.SqlClient.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.DataAccess.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Model.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Utility.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.DataAccess.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Model.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.AssemblyReference.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.GeneratedMSBuildEditorConfig.editorconfig
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.AssemblyInfoInputs.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.AssemblyInfo.cs
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.CoreCompileInputs.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cs
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.MvcApplicationPartsAssemblyInfo.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\staticwebassets\StudentRegistration.Api.StaticWebAssets.Manifest.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\staticwebassets\StudentRegistration.Api.StaticWebAssets.xml
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\scopedcss\bundle\StudentRegistration.Api.styles.css
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.RazorTargetAssemblyInfo.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.csproj.CopyComplete
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\ref\StudentRegistration.Api.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\obj\Debug\net5.0\StudentRegistration.Api.genruntimeconfig.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ci5NF+UdpgRb0gbaE8wNgc4CUWmCPsereELR6B488/rHxbPmQGb1gknrkTYOY9VlOSGpfVibfIo9i7KaGhIXcA==",
+  "dgSpecHash": "tfxF28lMDuF6WgxzuOkeF2nJ1zAxEwaq5k4UHCkD5MylqHowFXEmGdQxKsbGGDGZRN5oplNRhND+HUtwoSRp+A==",
   "success": true,
-  "projectFilePath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
+  "projectFilePath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Api\\StudentRegistration.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zakaria\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

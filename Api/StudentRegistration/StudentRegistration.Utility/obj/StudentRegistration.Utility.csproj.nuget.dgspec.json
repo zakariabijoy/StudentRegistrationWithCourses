@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {}
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {}
   },
   "projects": {
-    "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
+    "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
+        "projectUniqueName": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
         "projectName": "StudentRegistration.Utility",
-        "projectPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
+        "projectPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
         "packagesPath": "C:\\Users\\Zakaria\\.nuget\\packages\\",
-        "outputPath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\obj\\",
+        "outputPath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zakaria\\AppData\\Roaming\\NuGet\\NuGet.Config",

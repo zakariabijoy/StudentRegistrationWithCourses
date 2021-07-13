@@ -56,6 +56,7 @@ export class StudentComponent implements OnInit {
     console.log(data);
     if (data) {
       this.registerForm = this.fb.group({
+        studentId: [data.studentId],
         name: [data.name, Validators.required],
         regNo: [
           data.regNo,
@@ -146,7 +147,7 @@ export class StudentComponent implements OnInit {
             console.log(res);
             this.validationErrors = [];
             this.router.navigateByUrl('students');
-            this.toastr.success('Student registration is successfully done');
+            this.toastr.success('Student Updated is successfully done');
           },
           (error) => {
             console.log(error);

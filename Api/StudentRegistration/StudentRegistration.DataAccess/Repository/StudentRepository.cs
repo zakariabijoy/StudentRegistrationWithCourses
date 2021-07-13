@@ -166,9 +166,32 @@ namespace StudentRegistration.DataAccess.Repository
             }
         }
 
-        public Task<int> UpdateAsync(Student entity)
+        public async Task<int> UpdateAsync(Student entity)
         {
-            throw new NotImplementedException();
+            using var transection = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
+
+            var sql = "UPDATE  Students SET Name=@Name, RegNo=@RegNo, Gender=@Gender, DateOfBirth=@DateOfBirth WHERE StudentId=@StudentId;";
+                                        
+            await db.ExecuteAsync(sql, entity);
+
+            var sql1 = "delete from StudentCourse where StudentId = @id;";
+            await db.ExecuteAsync(sql1, new { @id = entity.StudentId});
+
+            List<StudentCourse> studentCourses = new List<StudentCourse>();
+
+            foreach (var course in entity.CourseList)
+            {
+                studentCourses.Add(new StudentCourse { CourseId = course.CourseId, StudentId = entity.StudentId });
+            }
+            var sql2 = "INSERT INTO StudentCourse (StudentId, CourseId) VALUES(@StudentId, @CourseId);";
+
+            await db.ExecuteAsync(sql2, studentCourses);
+
+            transection.Complete();
+
+            return entity.StudentId;
+
+
         }
     }
 }

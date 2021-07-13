@@ -30,3 +30,20 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.pdb
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.Utility.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.DataAccess.deps.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.DataAccess.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\ref\StudentRegistration.DataAccess.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.DataAccess.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.Model.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.Utility.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.Model.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\bin\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.csproj.AssemblyReference.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.AssemblyInfoInputs.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.AssemblyInfo.cs
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.csproj.CoreCompileInputs.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.csproj.CopyComplete
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\ref\StudentRegistration.DataAccess.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\obj\Debug\net5.0\StudentRegistration.DataAccess.pdb

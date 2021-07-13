@@ -76,40 +76,53 @@ namespace StudentRegistration.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] StudentDto studentDto)
         {
-            if(studentDto.RegNo > 0)
+            if (studentDto.StudentId == 0)
             {
-                if (_unitOfWork.Students.IfStudentExists(studentDto.RegNo))
+                if (studentDto.RegNo > 0)
                 {
-                    return BadRequest("this Student Already Exists");
-
-                }
-                else
-                {
-                    var courses = await _unitOfWork.Courses.GetByIdListAsync(studentDto.CourseCheckBoxList);
-                    if(courses.Count > 0)
+                    if (_unitOfWork.Students.IfStudentExists(studentDto.RegNo))
                     {
-                        var student = _mapper.Map<Student>(studentDto);
-                        student.CourseList = courses;
+                        return BadRequest("this Student Already Exists");
 
-                        var id = await _unitOfWork.Students.AddAsync(student);
-                        return Ok(id);
                     }
                     else
                     {
-                        return BadRequest("No Course Is Selected");
+                        var courses = await _unitOfWork.Courses.GetByIdListAsync(studentDto.CourseCheckBoxList);
+                        if (courses.Count > 0)
+                        {
+                            var student = _mapper.Map<Student>(studentDto);
+                            student.CourseList = courses;
+
+                            var id = await _unitOfWork.Students.AddAsync(student);
+                            return Ok(id);
+                        }
+                        else
+                        {
+                            return BadRequest("No Course Is Selected");
+                        }
+
                     }
-                    
                 }
             }
+            else
+            {
+                var courses = await _unitOfWork.Courses.GetByIdListAsync(studentDto.CourseCheckBoxList);
+                if (courses.Count > 0)
+                {
+                    var student = _mapper.Map<Student>(studentDto);
+                    student.CourseList = courses;
 
+                    var id = await _unitOfWork.Students.UpdateAsync(student);
+                    return Ok(id);
+                }
+                else
+                {
+                    return BadRequest("No Course Is Selected");
+                }
+            }
             return BadRequest("Something is wrong");
         }
 
-        // PUT api/<StudentsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
 
         // DELETE api/<StudentsController>/5
         [HttpDelete("{id}")]

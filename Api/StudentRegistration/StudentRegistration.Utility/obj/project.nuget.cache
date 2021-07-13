@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qCqGTJukr1xjN2NAHqzawp7DQ3HWisqETrqk+F/UX49X5EcweMIF+j7SU7te/zSIPtCUAKjuvQRY3JT1AcGZJg==",
+  "dgSpecHash": "mZqKfU70TwbAX8MLH2ooHRM6CqjMUsxg2bvTZz5eC82b5MQ2vQv5peqRN8lEXrdE+XkSxgbRibimSSDPM3ZcnA==",
   "success": true,
-  "projectFilePath": "F:\\PROJECTS\\Asp.Net Core\\Asp.NetCoreWebApiWithAngular\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
+  "projectFilePath": "G:\\Jobs or works\\S3Innovate\\StudentRegistration\\Api\\StudentRegistration\\StudentRegistration.Utility\\StudentRegistration.Utility.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Zakaria\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

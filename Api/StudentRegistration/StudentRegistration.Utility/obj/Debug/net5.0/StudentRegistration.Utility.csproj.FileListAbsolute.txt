@@ -10,3 +10,15 @@ F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\St
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\ref\StudentRegistration.Utility.dll
 F:\PROJECTS\Asp.Net Core\Asp.NetCoreWebApiWithAngular\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.GeneratedMSBuildEditorConfig.editorconfig
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.AssemblyInfoInputs.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.AssemblyInfo.cs
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.csproj.CoreCompileInputs.cache
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\ref\StudentRegistration.Utility.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\StudentRegistration.Utility.deps.json
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\StudentRegistration.Utility.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\ref\StudentRegistration.Utility.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\bin\Debug\net5.0\StudentRegistration.Utility.pdb
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Utility\obj\Debug\net5.0\StudentRegistration.Utility.csproj.AssemblyReference.cache

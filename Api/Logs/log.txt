@@ -1,0 +1,196 @@
+07/13/2021 18:17:05 from get 
+07/13/2021 18:17:05 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 200 in 919.5430 ms
+07/13/2021 20:14:44 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 500 in 1112.1375 ms
+System.ArgumentException: When using the multi-mapping APIs ensure you set the splitOn param if you have keys other than Id (Parameter 'splitOn')
+   at Dapper.SqlMapper.GetNextSplit(Int32 startIdx, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1697
+   at Dapper.SqlMapper.GenerateDeserializers(Identity identity, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1640
+   at Dapper.SqlMapper.MultiMapImpl[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn, IDataReader reader, Identity identity, Boolean finalize)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1457
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.MultiMapAsync[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn) in /_/Dapper/SqlMapper.Async.cs:line 915
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\StudentRepository.cs:line 115
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\StudentsController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/13/2021 20:14:44 An unhandled exception has occurred while executing the request.
+System.ArgumentException: When using the multi-mapping APIs ensure you set the splitOn param if you have keys other than Id (Parameter 'splitOn')
+   at Dapper.SqlMapper.GetNextSplit(Int32 startIdx, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1697
+   at Dapper.SqlMapper.GenerateDeserializers(Identity identity, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1640
+   at Dapper.SqlMapper.MultiMapImpl[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn, IDataReader reader, Identity identity, Boolean finalize)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1457
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.MultiMapAsync[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn) in /_/Dapper/SqlMapper.Async.cs:line 915
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\StudentRepository.cs:line 115
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\StudentsController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/13/2021 20:15:32 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 500 in 542.4815 ms
+System.ArgumentException: When using the multi-mapping APIs ensure you set the splitOn param if you have keys other than Id (Parameter 'splitOn')
+   at Dapper.SqlMapper.GetNextSplit(Int32 startIdx, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1697
+   at Dapper.SqlMapper.GenerateDeserializers(Identity identity, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1640
+   at Dapper.SqlMapper.MultiMapImpl[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn, IDataReader reader, Identity identity, Boolean finalize)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1457
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.MultiMapAsync[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn) in /_/Dapper/SqlMapper.Async.cs:line 915
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\StudentRepository.cs:line 115
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\StudentsController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/13/2021 20:15:32 An unhandled exception has occurred while executing the request.
+System.ArgumentException: When using the multi-mapping APIs ensure you set the splitOn param if you have keys other than Id (Parameter 'splitOn')
+   at Dapper.SqlMapper.GetNextSplit(Int32 startIdx, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1697
+   at Dapper.SqlMapper.GenerateDeserializers(Identity identity, String splitOn, IDataReader reader) in /_/Dapper/SqlMapper.cs:line 1640
+   at Dapper.SqlMapper.MultiMapImpl[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn, IDataReader reader, Identity identity, Boolean finalize)+MoveNext() in /_/Dapper/SqlMapper.cs:line 1457
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.MultiMapAsync[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn) in /_/Dapper/SqlMapper.Async.cs:line 915
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\StudentRepository.cs:line 115
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\StudentsController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/13/2021 20:18:03 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 500 in 432.9439 ms
+System.Data.DataException: Error parsing column 5 (CourseList=C#,JavaScript - String)
+ ---> System.InvalidCastException: Invalid cast from 'System.String' to 'System.Collections.Generic.List`1[[StudentRegistration.Model.Course, StudentRegistration.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize9f8d4c47-bcf1-4308-8343-896c420aa0a0(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3665
+   at Deserialize9f8d4c47-bcf1-4308-8343-896c420aa0a0(IDataReader )
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams)
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/13/2021 20:18:04 An unhandled exception has occurred while executing the request.
+System.Data.DataException: Error parsing column 5 (CourseList=C#,JavaScript - String)
+ ---> System.InvalidCastException: Invalid cast from 'System.String' to 'System.Collections.Generic.List`1[[StudentRegistration.Model.Course, StudentRegistration.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.String.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserialize9f8d4c47-bcf1-4308-8343-896c420aa0a0(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value) in /_/Dapper/SqlMapper.cs:line 3665
+   at Deserialize9f8d4c47-bcf1-4308-8343-896c420aa0a0(IDataReader )
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command)
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams)
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/13/2021 20:19:24 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 200 in 549.0284 ms
+07/13/2021 20:21:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 14.3329 ms
+07/13/2021 20:21:52 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 8.0821 ms
+07/13/2021 20:21:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 7.3974 ms
+07/13/2021 20:25:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 12.8583 ms
+07/13/2021 20:25:24 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 8.5831 ms
+07/13/2021 20:25:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 41.0320 ms
+07/13/2021 20:25:28 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 7.5775 ms
+07/13/2021 20:26:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1263.0715 ms
+07/13/2021 20:26:31 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 9.0636 ms
+07/13/2021 20:26:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 12.3738 ms
+07/13/2021 20:26:39 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 7.0404 ms
+07/13/2021 20:26:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 117.5237 ms
+07/13/2021 20:26:42 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 9.5905 ms
+07/13/2021 20:26:44 HTTP "GET" "/api/Courses" responded 200 in 131.2091 ms
+07/13/2021 20:27:00 HTTP "OPTIONS" "/api/Students" responded 204 in 0.3244 ms
+07/13/2021 20:27:00 HTTP "POST" "/api/Students" responded 400 in 104.5769 ms
+07/13/2021 20:28:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 27.2242 ms
+07/13/2021 20:28:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 15.9603 ms
+07/13/2021 20:28:09 HTTP "GET" "/api/Courses" responded 200 in 1.8787 ms
+07/13/2021 20:28:23 HTTP "OPTIONS" "/api/Students" responded 204 in 0.2251 ms
+07/13/2021 20:28:23 HTTP "POST" "/api/Students" responded 400 in 0.8062 ms
+07/13/2021 20:28:31 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0619 ms
+07/13/2021 20:28:31 HTTP "POST" "/api/Students" responded 400 in 0.5481 ms
+07/13/2021 20:29:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 9.8901 ms
+07/13/2021 20:29:33 HTTP "GET" "/api/Students/18" responded 200 in 129.1303 ms
+07/13/2021 20:29:36 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1375 ms
+07/13/2021 20:29:37 HTTP "POST" "/api/Students" responded 200 in 1308.1918 ms
+07/13/2021 20:29:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 10.9420 ms
+07/13/2021 20:30:12 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 352.9167 ms
+07/13/2021 20:30:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 7.0799 ms
+07/13/2021 20:30:37 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 6.5468 ms
+07/13/2021 20:31:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 15.1185 ms
+07/13/2021 20:31:06 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 15.8377 ms
+07/13/2021 20:31:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 118.4179 ms
+07/13/2021 20:31:34 HTTP "GET" "/api/Courses" responded 200 in 3.7442 ms
+07/13/2021 20:32:20 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0759 ms
+07/13/2021 20:32:20 HTTP "POST" "/api/Students" responded 200 in 409.0255 ms
+07/13/2021 20:32:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 17.9881 ms
+07/13/2021 20:32:28 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 12.4248 ms
+07/13/2021 20:32:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 6.3497 ms
+07/13/2021 20:32:37 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 10.8954 ms
+07/13/2021 20:32:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 7.3726 ms
+07/13/2021 20:32:39 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 105.8527 ms
+07/13/2021 20:32:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 18.2789 ms
+07/13/2021 20:32:41 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 6.6299 ms
+07/13/2021 20:32:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 9.2281 ms
+07/13/2021 20:33:12 HTTP "GET" "/api/Courses" responded 200 in 1.9132 ms
+07/13/2021 20:33:27 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0465 ms
+07/13/2021 20:33:27 HTTP "POST" "/api/Students" responded 200 in 11.5022 ms
+07/13/2021 20:33:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 10.1035 ms
+07/13/2021 20:33:35 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 6.1866 ms
+07/13/2021 20:33:37 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 12.4156 ms

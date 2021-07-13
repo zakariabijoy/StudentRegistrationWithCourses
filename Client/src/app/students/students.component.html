@@ -28,9 +28,7 @@
       <td>{{ student.regNo }}</td>
       <td>{{ student.gender }}</td>
       <td>{{ student.dateOfBirth | date: "mediumDate" }}</td>
-      <td>
-        <li *ngFor="let item of student.courseList">{{ item.name }}</li>
-      </td>
+      <td>{{ student.courses }}</td>
       <td>
         <div class="form-group">
           <button
@@ -40,7 +38,11 @@
           >
             <i class="fa fa-pencil"></i>
           </button>
-          <button class="btn btn-sm btn-danger ml-1" type="button" (click)="DeleteStudent(student.studentId)">
+          <button
+            class="btn btn-sm btn-danger ml-1"
+            type="button"
+            (click)="DeleteStudent(student.studentId)"
+          >
             <i class="fa fa-trash"></i>
           </button>
         </div>

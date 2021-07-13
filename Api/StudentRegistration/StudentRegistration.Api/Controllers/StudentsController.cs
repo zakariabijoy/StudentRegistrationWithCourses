@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using StudentRegistration.Utility.Extenstions;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -20,11 +21,13 @@ namespace StudentRegistration.Api.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly ILogger<StudentsController> _logger;
 
-        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper)
+        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper, ILogger<StudentsController> logger)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _logger = logger;
         }
         // GET: api/<StudentsController>
         [HttpGet]
@@ -93,8 +96,17 @@ namespace StudentRegistration.Api.Controllers
                             var student = _mapper.Map<Student>(studentDto);
                             student.CourseList = courses;
 
-                            var id = await _unitOfWork.Students.AddAsync(student);
-                            return Ok(id);
+                            try
+                            {
+                                var id = await _unitOfWork.Students.AddAsync(student);
+                                return Ok(id);
+                            }
+                            catch (Exception ex)
+                            {
+
+                                _logger.LogError(ex.Message);
+                            }
+                            
                         }
                         else
                         {
@@ -111,9 +123,17 @@ namespace StudentRegistration.Api.Controllers
                 {
                     var student = _mapper.Map<Student>(studentDto);
                     student.CourseList = courses;
+                    try
+                    {
+                        var id = await _unitOfWork.Students.UpdateAsync(student);
+                        return Ok(id);
+                    }
+                    catch (Exception ex)
+                    {
 
-                    var id = await _unitOfWork.Students.UpdateAsync(student);
-                    return Ok(id);
+                        _logger.LogError(ex.Message);
+                    }
+                    
                 }
                 else
                 {

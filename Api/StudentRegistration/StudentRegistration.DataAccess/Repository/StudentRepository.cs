@@ -27,34 +27,28 @@ namespace StudentRegistration.DataAccess.Repository
         {
             using var transection = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
             
-                try
-                {
-                    var sql = "INSERT INTO Students (Name, RegNo, Gender, DateOfBirth) VALUES(@Name, @RegNo, @Gender, @DateOfBirth);" +
-                                             "SELECT CAST(SCOPE_IDENTITY() as int); ";
-                    var id = await db.QueryAsync<int>(sql, entity);
-                    entity.StudentId = id.FirstOrDefault();
 
-                List<StudentCourse> studentCourses = new List<StudentCourse>();
+            var sql = "INSERT INTO Students (Name, RegNo, Gender, DateOfBirth) VALUES(@Name, @RegNo, @Gender, @DateOfBirth);" +
+                                        "SELECT CAST(SCOPE_IDENTITY() as int); ";
+            var id = await db.QueryAsync<int>(sql, entity);
+            entity.StudentId = id.FirstOrDefault();
 
-                foreach (var course in entity.CourseList)
-                {
-                    studentCourses.Add(new StudentCourse { CourseId = course.CourseId, StudentId = entity.StudentId });
-                }
-                var sql1 = "INSERT INTO StudentCourse (StudentId, CourseId) VALUES(@StudentId, @CourseId);" +
-                    "SELECT CAST(SCOPE_IDENTITY() as int);";
+            List<StudentCourse> studentCourses = new List<StudentCourse>();
 
-               await db.ExecuteAsync(sql1, studentCourses);
+            foreach (var course in entity.CourseList)
+            {
+                studentCourses.Add(new StudentCourse { CourseId = course.CourseId, StudentId = entity.StudentId });
+            }
+            var sql1 = "INSERT INTO StudentCourse (StudentId, CourseId) VALUES(@StudentId, @CourseId);" +
+                "SELECT CAST(SCOPE_IDENTITY() as int);";
 
-                transection.Complete();
+            await db.ExecuteAsync(sql1, studentCourses);
 
-                return entity.StudentId;
+            transection.Complete();
+
+            return entity.StudentId;
+
                 
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                 
-                }
         }
 
         public async Task<int> DeleteAsync(int id)
@@ -102,28 +96,25 @@ namespace StudentRegistration.DataAccess.Repository
 
         public async Task<PagedList<Student>> GetAllAsyncWithPaginationAsync(StudentsParams studentsParams)
         {
-            var sql = @"select s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth, c.CourseId, c.Name, c.Credit
-                        from Students s
+            var sql = @"select  s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth,   STRING_AGG(c.Name, ', ') AS Courses
+                        from Courses c
                         inner join
-                        StudentCourse sc on sc.StudentId = s.StudentId
+                        StudentCourse sc on sc.CourseId = c.CourseId
                         inner join 
-                        Courses c on c.CourseId = sc.CourseId;";
+						Students s on s.StudentId =sc.StudentId
+						GROUP BY s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth
+						order by s.StudentId
+						OFFSET (@pageNumber-1)*@pageSize ROWS FETCH NEXT @pageSize ROWS ONLY;";
 
-            var studentDic = new Dictionary<int, Student>();
+            var counSql = @"SELECT COUNT (DISTINCT StudentId)
+                            FROM StudentCourse;";
 
-            var students = await db.QueryAsync<Student, Course, Student>(sql, (s, c) => {
+            var count = db.Query<int>(counSql).FirstOrDefault();
 
-                if (!studentDic.TryGetValue(s.StudentId, out var currentStudent))
-                {
-                    currentStudent = s;
-                    studentDic.Add(currentStudent.StudentId, currentStudent);
-                }
 
-                currentStudent.CourseList.Add(c);
-                return currentStudent;
-            }, splitOn: "CourseId");
+            var students = await db.QueryAsync<Student>(sql, new { @pageNumber = studentsParams.PageNumber, @pageSize = studentsParams.pageSize });
 
-            return PagedList<Student>.Create(students.Distinct().AsQueryable(),studentsParams.PageNumber, studentsParams.pageSize);
+            return PagedList<Student>.Create(students.Distinct().AsQueryable(),studentsParams.PageNumber, studentsParams.pageSize, count);
         }
 
         public async Task<Student> GetByIdAsync(int id)

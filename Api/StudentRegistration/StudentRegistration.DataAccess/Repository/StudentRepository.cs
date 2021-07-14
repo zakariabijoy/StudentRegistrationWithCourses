@@ -96,7 +96,10 @@ namespace StudentRegistration.DataAccess.Repository
 
         public async Task<PagedList<Student>> GetAllAsyncWithPaginationAsync(StudentsParams studentsParams)
         {
-            var sql = @"select  s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth,   STRING_AGG(c.Name, ', ') AS Courses
+            string sql;
+            if (studentsParams.SearchBy == null)
+            {
+                 sql = @"select  s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth,   STRING_AGG(c.Name, ', ') AS Courses
                         from Courses c
                         inner join
                         StudentCourse sc on sc.CourseId = c.CourseId
@@ -106,15 +109,31 @@ namespace StudentRegistration.DataAccess.Repository
 						order by s.StudentId
 						OFFSET (@pageNumber-1)*@pageSize ROWS FETCH NEXT @pageSize ROWS ONLY;";
 
+            }
+            else
+            {
+                 sql = @"select  s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth,   STRING_AGG(c.Name, ', ') AS Courses
+                        from Courses c
+                        inner join
+                        StudentCourse sc on sc.CourseId = c.CourseId
+                        inner join 
+						Students s on s.StudentId =sc.StudentId
+                        WHERE s.Name  like  '%' + @searchBy + '%'
+						GROUP BY s.StudentId, s.Name, s.RegNo, s.Gender, s.DateOfBirth
+						order by s.StudentId
+						OFFSET (@pageNumber-1)*@pageSize ROWS FETCH NEXT @pageSize ROWS ONLY;";
+
+            }
+
             var counSql = @"SELECT COUNT (DISTINCT StudentId)
                             FROM StudentCourse;";
 
             var count = db.Query<int>(counSql).FirstOrDefault();
+            
+            var students = await db.QueryAsync<Student>(sql, new { pageNumber = studentsParams.PageNumber, pageSize = studentsParams.pageSize, searchBy=studentsParams.SearchBy });
 
 
-            var students = await db.QueryAsync<Student>(sql, new { @pageNumber = studentsParams.PageNumber, @pageSize = studentsParams.pageSize });
-
-            return PagedList<Student>.Create(students.Distinct().AsQueryable(),studentsParams.PageNumber, studentsParams.pageSize, count);
+            return PagedList<Student>.Create(students.Distinct().AsQueryable(),studentsParams.PageNumber, studentsParams.pageSize,count);
         }
 
         public async Task<Student> GetByIdAsync(int id)

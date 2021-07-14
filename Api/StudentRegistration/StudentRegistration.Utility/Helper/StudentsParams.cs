@@ -17,5 +17,6 @@ namespace StudentRegistration.Utility.Helper
             get => _pageSize;
             set => _pageSize = (value > MaxPageSize) ? MaxPageSize : value;
         }
+        public string SearchBy { get; set; }
     }
 }

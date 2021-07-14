@@ -11,9 +11,10 @@ import { StudentsComponent } from './students/students.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { DatePipe } from '@angular/common';
+import { StudentEditComponent } from './students/student-edit/student-edit.component';
 
 @NgModule({
-  declarations: [AppComponent, StudentsComponent, StudentComponent],
+  declarations: [AppComponent, StudentsComponent, StudentComponent, StudentEditComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

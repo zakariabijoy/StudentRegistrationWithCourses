@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { StudentEditComponent } from './students/student-edit/student-edit.component';
 import { StudentComponent } from './students/student/student.component';
 import { StudentsComponent } from './students/students.component';
 
@@ -10,7 +11,7 @@ const routes: Routes = [
     path: 'student',
     children: [
       { path: '', component: StudentComponent },
-      { path: 'edit/:id', component: StudentComponent },
+      { path: 'edit/:id', component: StudentEditComponent },
     ],
   },
 ];

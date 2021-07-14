@@ -202,3 +202,387 @@ System.Data.DataException: Error parsing column 5 (CourseList=C#,JavaScript - St
 07/13/2021 20:35:19 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 10.4405 ms
 07/13/2021 20:40:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 8.5462 ms
 07/13/2021 20:41:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 25.2513 ms
+07/13/2021 23:19:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2649.7692 ms
+07/13/2021 23:20:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 18.6297 ms
+07/13/2021 23:20:19 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 8.5410 ms
+07/13/2021 23:20:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 10.8311 ms
+07/13/2021 23:20:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 8.4678 ms
+07/13/2021 23:20:30 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 6.6631 ms
+07/13/2021 23:20:39 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 7.0867 ms
+07/13/2021 23:20:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 27.4021 ms
+07/13/2021 23:20:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 9.9049 ms
+07/13/2021 23:20:47 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 8.9912 ms
+07/13/2021 23:20:57 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 10.3968 ms
+07/13/2021 23:21:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 14.5170 ms
+07/13/2021 23:21:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.3662 ms
+07/13/2021 23:21:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 6.2896 ms
+07/13/2021 23:21:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 6.6037 ms
+07/13/2021 23:21:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 6.4640 ms
+07/13/2021 23:21:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 6.0237 ms
+07/13/2021 23:21:49 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.8316 ms
+07/13/2021 23:21:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.3326 ms
+07/13/2021 23:21:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 32.4702 ms
+07/13/2021 23:22:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 12.3413 ms
+07/13/2021 23:22:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 11.0469 ms
+07/13/2021 23:23:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.9421 ms
+07/13/2021 23:23:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 8.0551 ms
+07/13/2021 23:23:19 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&pageSize=5" responded 200 in 7.5725 ms
+07/13/2021 23:23:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&SearchBy=5" responded 200 in 2.3482 ms
+07/13/2021 23:23:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.0503 ms
+07/13/2021 23:23:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 6.6597 ms
+07/13/2021 23:23:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 10.3659 ms
+07/13/2021 23:25:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 19.9906 ms
+07/13/2021 23:25:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 9.5340 ms
+07/13/2021 23:25:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 17.8447 ms
+07/13/2021 23:25:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 16.1201 ms
+07/13/2021 23:25:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 6.9411 ms
+07/13/2021 23:26:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 9.2790 ms
+07/13/2021 23:27:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 13.1805 ms
+07/13/2021 23:29:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 9.8366 ms
+07/13/2021 23:30:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 10.4861 ms
+07/13/2021 23:30:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 31.5697 ms
+07/13/2021 23:31:21 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 8.2282 ms
+07/13/2021 23:31:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 7.5989 ms
+07/13/2021 23:31:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 5.3594 ms
+07/13/2021 23:32:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 7.3192 ms
+07/13/2021 23:32:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 3.3893 ms
+07/13/2021 23:34:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 7.7573 ms
+07/13/2021 23:34:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.0503 ms
+07/13/2021 23:34:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.2854 ms
+07/13/2021 23:34:39 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 10.9443 ms
+07/13/2021 23:35:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 15.0111 ms
+07/13/2021 23:36:19 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 8.1335 ms
+07/13/2021 23:36:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.4184 ms
+07/13/2021 23:36:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.7957 ms
+07/13/2021 23:36:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 6.2023 ms
+07/13/2021 23:40:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 711.4985 ms
+07/13/2021 23:41:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 11.4658 ms
+07/13/2021 23:41:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 6.0445 ms
+07/13/2021 23:41:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 12.8388 ms
+07/13/2021 23:42:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 15.4163 ms
+07/13/2021 23:42:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.8430 ms
+07/13/2021 23:42:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.7059 ms
+07/13/2021 23:42:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.0051 ms
+07/13/2021 23:42:57 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 3.1554 ms
+07/13/2021 23:42:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.3697 ms
+07/13/2021 23:42:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.4180 ms
+07/13/2021 23:42:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.4866 ms
+07/13/2021 23:42:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.5464 ms
+07/13/2021 23:42:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.1367 ms
+07/13/2021 23:42:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.5248 ms
+07/13/2021 23:42:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.9562 ms
+07/13/2021 23:43:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.4843 ms
+07/13/2021 23:43:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.3852 ms
+07/13/2021 23:43:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.4327 ms
+07/13/2021 23:43:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.3554 ms
+07/13/2021 23:43:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 4.4975 ms
+07/13/2021 23:43:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 4.4217 ms
+07/13/2021 23:43:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 4.5144 ms
+07/13/2021 23:43:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 4.9017 ms
+07/13/2021 23:43:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.6454 ms
+07/13/2021 23:43:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 4.2990 ms
+07/13/2021 23:43:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 1.4248 ms
+07/13/2021 23:43:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 3.7399 ms
+07/13/2021 23:43:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 866.2741 ms
+07/13/2021 23:43:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 4.2131 ms
+07/13/2021 23:43:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 8.0946 ms
+07/13/2021 23:43:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 5.7907 ms
+07/13/2021 23:43:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 114.8640 ms
+07/13/2021 23:43:49 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=5" responded 200 in 2.6087 ms
+07/13/2021 23:45:00 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 152.9104 ms
+07/13/2021 23:45:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.7078 ms
+07/13/2021 23:46:02 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 200 in 52693.9876 ms
+07/13/2021 23:46:20 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5&SearchBy=bi" responded 200 in 5142.5752 ms
+07/13/2021 23:49:06 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 33.3211 ms
+07/13/2021 23:49:07 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.7566 ms
+07/13/2021 23:49:24 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5&SearchBy=bi" responded 500 in 5191.7052 ms
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'GROUP'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\StudentRepository.cs:line 130
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\StudentsController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:eaef8599-07b6-446f-bf3a-057c2ae41ede
+Error Number:156,State:1,Class:15
+07/13/2021 23:49:26 An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'GROUP'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.StudentRepository.GetAllAsyncWithPaginationAsync(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\StudentRepository.cs:line 130
+   at StudentRegistration.Api.Controllers.StudentsController.Get(StudentsParams studentsParams) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\StudentsController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:eaef8599-07b6-446f-bf3a-057c2ae41ede
+Error Number:156,State:1,Class:15
+07/13/2021 23:51:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 540.6959 ms
+07/13/2021 23:52:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 11.2695 ms
+07/13/2021 23:52:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 68.3327 ms
+07/13/2021 23:52:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 9.6002 ms
+07/13/2021 23:52:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.7747 ms
+07/13/2021 23:52:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.3538 ms
+07/13/2021 23:52:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 3.8220 ms
+07/13/2021 23:52:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 4.6679 ms
+07/13/2021 23:52:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.0798 ms
+07/13/2021 23:52:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 4.1551 ms
+07/13/2021 23:52:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 4.8248 ms
+07/13/2021 23:53:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.0488 ms
+07/13/2021 23:57:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 918.3585 ms
+07/13/2021 23:57:33 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 6.3725 ms
+07/13/2021 23:57:35 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 5.9137 ms
+07/13/2021 23:57:38 HTTP "GET" "/api/Students/26" responded 200 in 334.4772 ms
+07/13/2021 23:57:43 HTTP "OPTIONS" "/api/Students" responded 204 in 0.3337 ms
+07/13/2021 23:57:43 HTTP "POST" "/api/Students" responded 200 in 299.2789 ms
+07/13/2021 23:57:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 3.9714 ms
+07/13/2021 23:57:46 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 2.5466 ms
+07/13/2021 23:57:53 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 8.3671 ms
+07/13/2021 23:57:53 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 36.4399 ms
+07/13/2021 23:57:53 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 9.6392 ms
+07/13/2021 23:57:53 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 9.6838 ms
+07/13/2021 23:58:00 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 7.2368 ms
+07/13/2021 23:58:00 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.8469 ms
+07/13/2021 23:58:00 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.8917 ms
+07/13/2021 23:58:01 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.8915 ms
+07/13/2021 23:58:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.9634 ms
+07/13/2021 23:58:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.0394 ms
+07/13/2021 23:58:11 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.9128 ms
+07/13/2021 23:58:11 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.7174 ms
+07/13/2021 23:58:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 131.3554 ms
+07/13/2021 23:58:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.1962 ms
+07/13/2021 23:58:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.4290 ms
+07/13/2021 23:58:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.6622 ms
+07/13/2021 23:58:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.7571 ms
+07/13/2021 23:58:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.7569 ms
+07/13/2021 23:58:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.8055 ms
+07/13/2021 23:58:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.9420 ms
+07/13/2021 23:58:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 2.7998 ms
+07/13/2021 23:58:20 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 3.6908 ms
+07/13/2021 23:58:22 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.7713 ms
+07/13/2021 23:58:22 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.8379 ms
+07/13/2021 23:58:22 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6953 ms
+07/13/2021 23:58:22 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.7185 ms
+07/13/2021 23:58:23 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 6.2839 ms
+07/13/2021 23:58:23 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 3.6110 ms
+07/13/2021 23:58:24 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 3.4623 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6970 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 2.9545 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.8148 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6671 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6712 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 3.0237 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.8024 ms
+07/13/2021 23:58:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.5572 ms
+07/13/2021 23:58:26 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 3.4492 ms
+07/13/2021 23:58:26 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.5442 ms
+07/13/2021 23:58:26 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6599 ms
+07/13/2021 23:58:26 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6568 ms
+07/13/2021 23:58:27 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 1.6121 ms
+07/13/2021 23:58:27 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 4.8180 ms
+07/13/2021 23:58:27 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 5.8797 ms
+07/13/2021 23:58:28 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 5.1584 ms
+07/13/2021 23:58:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 5.1456 ms
+07/13/2021 23:58:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.8147 ms
+07/13/2021 23:58:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.6296 ms
+07/13/2021 23:59:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 10.1574 ms
+07/13/2021 23:59:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 1.6955 ms
+07/13/2021 23:59:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 8.3991 ms
+07/13/2021 23:59:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 9.1359 ms
+07/14/2021 00:01:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 494.8022 ms
+07/14/2021 00:01:33 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5" responded 200 in 7.1003 ms
+07/14/2021 00:01:34 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5" responded 200 in 6.0517 ms
+07/14/2021 00:01:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5" responded 200 in 3.2571 ms
+07/14/2021 00:01:55 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 34.6972 ms
+07/14/2021 00:01:55 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.7728 ms
+07/14/2021 00:02:18 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5&SearchBy=bi" responded 200 in 4716.0604 ms
+07/14/2021 00:07:51 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 19360.8607 ms
+07/14/2021 00:08:02 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 2736.3339 ms
+07/14/2021 00:08:07 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 2396.6162 ms
+07/14/2021 00:08:35 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=b" responded 200 in 21474.6665 ms
+07/14/2021 00:08:51 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 12481.1917 ms
+07/14/2021 00:12:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 10756.0813 ms
+07/14/2021 00:12:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 426.1966 ms
+07/14/2021 00:12:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 534.1337 ms
+07/14/2021 00:12:59 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 4.2103 ms
+07/14/2021 00:13:00 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 4.1776 ms
+07/14/2021 00:13:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.5775 ms
+07/14/2021 00:13:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=z" responded 200 in 7.8034 ms
+07/14/2021 00:13:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=za" responded 200 in 5.5567 ms
+07/14/2021 00:13:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=z" responded 200 in 4.9655 ms
+07/14/2021 00:13:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.9768 ms
+07/14/2021 00:13:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=za" responded 200 in 6.2284 ms
+07/14/2021 00:13:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=za" responded 200 in 1.8418 ms
+07/14/2021 00:13:25 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=za" responded 200 in 3.9760 ms
+07/14/2021 00:13:26 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=za" responded 200 in 2.5271 ms
+07/14/2021 00:13:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=za" responded 200 in 3.9960 ms
+07/14/2021 00:40:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 581.9598 ms
+07/14/2021 00:40:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.7473 ms
+07/14/2021 00:40:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 29.7824 ms
+07/14/2021 00:40:22 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.4326 ms
+07/14/2021 00:40:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 28.8309 ms
+07/14/2021 00:40:31 HTTP "GET" "/api/Courses" responded 200 in 30.4592 ms
+07/14/2021 00:40:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.5729 ms
+07/14/2021 00:40:34 HTTP "GET" "/api/Students/14" responded 200 in 33.1060 ms
+07/14/2021 00:40:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.2606 ms
+07/14/2021 00:40:39 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 6.5611 ms
+07/14/2021 00:40:40 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 3.9159 ms
+07/14/2021 00:40:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.0383 ms
+07/14/2021 00:40:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 18.4816 ms
+07/14/2021 00:40:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 5.6993 ms
+07/14/2021 00:40:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bij" responded 200 in 1.8565 ms
+07/14/2021 00:40:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 2.5290 ms
+07/14/2021 00:40:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 2.1123 ms
+07/14/2021 00:40:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8220 ms
+07/14/2021 00:40:48 HTTP "GET" "/api/Students/14" responded 200 in 6.5804 ms
+07/14/2021 00:40:54 HTTP "OPTIONS" "/api/Students" responded 204 in 0.4564 ms
+07/14/2021 00:40:54 HTTP "POST" "/api/Students" responded 200 in 96.1965 ms
+07/14/2021 00:40:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9071 ms
+07/14/2021 00:41:00 HTTP "GET" "/api/Courses" responded 200 in 1.5707 ms
+07/14/2021 00:41:33 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1433 ms
+07/14/2021 00:41:33 HTTP "POST" "/api/Students" responded 200 in 24.0935 ms
+07/14/2021 00:41:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.6522 ms
+07/14/2021 00:41:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=a" responded 200 in 2.0139 ms
+07/14/2021 00:41:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=ar" responded 200 in 2.9251 ms
+07/14/2021 00:41:39 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=aru" responded 200 in 1.7364 ms
+07/14/2021 00:41:39 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=ar" responded 200 in 1.7934 ms
+07/14/2021 00:41:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=a" responded 200 in 1.7547 ms
+07/14/2021 00:41:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.6787 ms
+07/14/2021 00:41:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=a" responded 200 in 9.0609 ms
+07/14/2021 00:41:50 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=ar" responded 200 in 9.8313 ms
+07/14/2021 00:41:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=a" responded 200 in 5.4407 ms
+07/14/2021 00:41:53 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.1981 ms
+07/14/2021 00:41:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=a" responded 200 in 1.7536 ms
+07/14/2021 00:41:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=ar" responded 200 in 97.9355 ms
+07/14/2021 00:41:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=a" responded 200 in 5.2589 ms
+07/14/2021 00:41:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.6422 ms
+07/14/2021 00:41:57 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.2039 ms
+07/14/2021 11:07:19 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2854.1207 ms
+07/14/2021 11:08:46 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 377.0199 ms
+07/14/2021 11:08:46 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 3.9535 ms
+07/14/2021 11:08:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.0524 ms
+07/14/2021 11:08:49 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 2.9799 ms
+07/14/2021 11:08:50 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 3.8506 ms
+07/14/2021 11:08:51 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.7470 ms
+07/14/2021 11:08:58 HTTP "GET" "/api/Students/14" responded 200 in 70.9021 ms
+07/14/2021 11:09:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.8935 ms
+07/14/2021 11:09:06 HTTP "GET" "/api/Students/15" responded 200 in 7.9392 ms
+07/14/2021 11:09:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 117.8390 ms
+07/14/2021 11:09:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=l" responded 200 in 102.7941 ms
+07/14/2021 11:09:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=lh" responded 200 in 2.4736 ms
+07/14/2021 11:09:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=l" responded 200 in 1.9113 ms
+07/14/2021 11:09:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=l" responded 200 in 2.3641 ms
+07/14/2021 11:09:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=l" responded 200 in 6.7808 ms
+07/14/2021 11:09:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=l" responded 200 in 3.2517 ms
+07/14/2021 11:09:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.5696 ms
+07/14/2021 11:23:01 HTTP "GET" "/api/Courses" responded 200 in 334.1610 ms
+07/14/2021 11:23:28 HTTP "OPTIONS" "/api/Students" responded 204 in 0.3798 ms
+07/14/2021 11:23:28 HTTP "POST" "/api/Students" responded 200 in 242.3786 ms
+07/14/2021 11:23:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 25.4285 ms
+07/14/2021 11:23:32 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 13.0218 ms
+07/14/2021 11:23:37 HTTP "GET" "/api/Students/28" responded 200 in 6.2455 ms
+07/14/2021 11:23:49 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1388 ms
+07/14/2021 11:23:49 HTTP "POST" "/api/Students" responded 200 in 117.0201 ms
+07/14/2021 11:23:49 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 48.1396 ms
+07/14/2021 11:23:51 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 31.4334 ms
+07/14/2021 11:23:54 HTTP "GET" "/api/Students/28" responded 200 in 6.0202 ms
+07/14/2021 11:23:56 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0554 ms
+07/14/2021 11:23:56 HTTP "POST" "/api/Students" responded 200 in 9.6309 ms
+07/14/2021 11:23:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.6731 ms
+07/14/2021 11:23:57 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 7.6258 ms
+07/14/2021 11:24:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.2154 ms
+07/14/2021 11:24:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 19.0560 ms
+07/14/2021 11:24:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 1.7466 ms
+07/14/2021 11:24:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bij" responded 200 in 7.8007 ms
+07/14/2021 11:24:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bijo" responded 200 in 7.1858 ms
+07/14/2021 11:24:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bijoy" responded 200 in 5.8161 ms
+07/14/2021 11:24:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bijo" responded 200 in 101.4663 ms
+07/14/2021 11:24:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bij" responded 200 in 1.7552 ms
+07/14/2021 11:24:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 1.5567 ms
+07/14/2021 11:24:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 2.0479 ms
+07/14/2021 11:24:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 4.9612 ms
+07/14/2021 11:24:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=s" responded 200 in 5.3729 ms
+07/14/2021 11:24:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=st" responded 200 in 2.6880 ms
+07/14/2021 11:24:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=stu" responded 200 in 1.6864 ms
+07/14/2021 11:24:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=stude" responded 200 in 2.5894 ms
+07/14/2021 11:24:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=studen" responded 200 in 2.3700 ms
+07/14/2021 11:24:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=studen" responded 200 in 2.0447 ms
+07/14/2021 11:24:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=stude" responded 200 in 2.7967 ms
+07/14/2021 11:24:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=stud" responded 200 in 3.2523 ms
+07/14/2021 11:24:19 HTTP "GET" "/api/Students/28" responded 200 in 18.6196 ms
+07/14/2021 11:24:51 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0887 ms
+07/14/2021 11:24:51 HTTP "POST" "/api/Students" responded 200 in 11.7919 ms
+07/14/2021 11:24:51 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.4619 ms
+07/14/2021 14:25:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 577.4056 ms
+07/14/2021 14:26:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 94.5522 ms
+07/14/2021 14:36:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 235.3847 ms
+07/14/2021 14:36:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 97.4449 ms
+07/14/2021 14:37:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 23.1468 ms
+07/14/2021 14:37:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8956 ms
+07/14/2021 14:37:47 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 33.0169 ms
+07/14/2021 14:38:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 35.4770 ms
+07/14/2021 14:38:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 20.5532 ms
+07/14/2021 14:38:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.5543 ms
+07/14/2021 14:38:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7785 ms
+07/14/2021 14:39:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8379 ms
+07/14/2021 14:39:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9457 ms
+07/14/2021 14:39:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 61.8294 ms
+07/14/2021 14:39:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.8331 ms
+07/14/2021 14:39:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7020 ms
+07/14/2021 14:40:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.2643 ms
+07/14/2021 14:40:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.0482 ms
+07/14/2021 14:40:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.1123 ms
+07/14/2021 14:41:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 18.0954 ms
+07/14/2021 14:41:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.9487 ms
+07/14/2021 14:42:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.9326 ms
+07/14/2021 14:42:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7266 ms
+07/14/2021 14:42:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 39.7874 ms
+07/14/2021 14:42:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 52.9339 ms
+07/14/2021 14:42:49 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 21.5769 ms
+07/14/2021 14:43:15 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.2115 ms
+07/14/2021 14:43:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 82.1364 ms
+07/14/2021 14:43:21 HTTP "GET" "/api/Courses" responded 200 in 446.6534 ms
+07/14/2021 14:43:41 HTTP "OPTIONS" "/api/Students" responded 204 in 52.9910 ms
+07/14/2021 14:43:42 HTTP "POST" "/api/Students" responded 200 in 326.3230 ms
+07/14/2021 14:43:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.5066 ms
+07/14/2021 14:43:45 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 2.0364 ms
+07/14/2021 14:43:48 HTTP "GET" "/api/Students/29" responded 200 in 17.0183 ms
+07/14/2021 14:44:02 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0590 ms
+07/14/2021 14:44:02 HTTP "POST" "/api/Students" responded 200 in 223.1903 ms
+07/14/2021 14:44:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.4190 ms
+07/14/2021 14:44:04 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 58.8433 ms

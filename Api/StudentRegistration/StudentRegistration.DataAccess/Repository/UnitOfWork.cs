@@ -9,14 +9,16 @@ namespace StudentRegistration.DataAccess.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public UnitOfWork(ICourseRepository courseRepository, IStudentRepository studentRepository)
+        public UnitOfWork(ICourseRepository courseRepository, IStudentRepository studentRepository,IUserRepository userRepository)
         {
             Courses = courseRepository;
             Students = studentRepository;
+            Users = userRepository;
         }
 
         public ICourseRepository Courses { get; set; }
         public IStudentRepository Students { get; set; }
+        public IUserRepository Users { get; set; }
         
     }
 }

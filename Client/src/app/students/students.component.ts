@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Pagination } from '../models/pagination.model';
 import { StudentDto } from '../models/studentDto.model';
+import { AccountService } from '../services/account.service';
 import { StudentService } from '../services/student.service';
 
 @Component({
@@ -21,7 +22,8 @@ export class StudentsComponent implements OnInit {
   constructor(
     public studentService: StudentService,
     private router: Router,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    public accountService:AccountService
   ) {}
 
   ngOnInit(): void {

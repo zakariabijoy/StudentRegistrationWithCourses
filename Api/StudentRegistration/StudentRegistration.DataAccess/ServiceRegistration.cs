@@ -15,6 +15,7 @@ namespace StudentRegistration.DataAccess
         {
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
     }

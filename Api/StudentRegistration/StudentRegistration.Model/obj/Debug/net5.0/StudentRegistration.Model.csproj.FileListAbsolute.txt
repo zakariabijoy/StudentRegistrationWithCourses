@@ -32,4 +32,3 @@ G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentR
 G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Model\obj\Debug\net5.0\StudentRegistration.Model.dll
 G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Model\obj\Debug\net5.0\ref\StudentRegistration.Model.dll
 G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Model\obj\Debug\net5.0\StudentRegistration.Model.pdb
-G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Model\obj\Debug\net5.0\StudentRegistration.Model.csproj.AssemblyReference.cache

@@ -10,5 +10,6 @@ namespace StudentRegistration.DataAccess.Repository.Interfaces
     {
         ICourseRepository Courses { get; set; }
         IStudentRepository Students { get; set; }
+        IUserRepository Users { get; set; }
     }
 }

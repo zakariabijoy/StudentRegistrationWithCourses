@@ -141,3 +141,10 @@ G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentR
 G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Serilog.Sinks.Console.dll
 G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
 G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Serilog.Sinks.File.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

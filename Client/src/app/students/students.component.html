@@ -1,3 +1,6 @@
+<br />
+<br />
+<br />
 <div class="row mb-2 mt-4">
   <div class="col-md-6 offset-md-6">
     <input
@@ -18,7 +21,11 @@
     <th>Date Of Birth</th>
     <th>Courses</th>
     <th>
-      <a class="btn btn-outline-success" routerLink="/student">
+      <a
+        class="btn btn-outline-success"
+        routerLink="/student"
+        *ngIf="accountService.currentUser$ | async"
+      >
         <i class="fa fa-plus-square"></i> Create New</a
       >
     </th>
@@ -47,6 +54,7 @@
             class="btn btn-sm btn-warning"
             type="submit"
             (click)="openForEdit(student.studentId)"
+            *ngIf="accountService.currentUser$ | async"
           >
             <i class="fa fa-pencil"></i>
           </button>
@@ -54,6 +62,7 @@
             class="btn btn-sm btn-danger ml-1"
             type="button"
             (click)="DeleteStudent(student.studentId)"
+            *ngIf="accountService.currentUser$ | async"
           >
             <i class="fa fa-trash"></i>
           </button>

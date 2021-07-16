@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using StudentRegistration.Utility.Extenstions;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -40,6 +41,7 @@ namespace StudentRegistration.Api.Controllers
 
         // GET api/<StudentsController>/5
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> Get(int id)
         {
             if (id > 0)
@@ -77,6 +79,7 @@ namespace StudentRegistration.Api.Controllers
 
         // POST api/<StudentsController>
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post([FromBody] StudentDto studentDto)
         {
             if (studentDto.StudentId == 0)
@@ -146,6 +149,7 @@ namespace StudentRegistration.Api.Controllers
 
         // DELETE api/<StudentsController>/5
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> Delete(int id)
         {
             if(id > 0)

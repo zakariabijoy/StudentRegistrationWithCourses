@@ -586,3 +586,1772 @@ Error Number:156,State:1,Class:15
 07/14/2021 14:44:02 HTTP "POST" "/api/Students" responded 200 in 223.1903 ms
 07/14/2021 14:44:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.4190 ms
 07/14/2021 14:44:04 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 58.8433 ms
+07/14/2021 16:05:03 HTTP "GET" "/api/Students?PageNumber=1&pageSize=6" responded 200 in 77.4892 ms
+07/14/2021 16:06:35 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 200 in 2761.2009 ms
+07/14/2021 17:26:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 139.2905 ms
+07/14/2021 17:27:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 24.2545 ms
+07/14/2021 17:27:21 HTTP "GET" "/api/Courses" responded 200 in 175.1744 ms
+07/14/2021 17:27:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 4.1551 ms
+07/14/2021 17:27:37 HTTP "GET" "/api/Courses" responded 200 in 2.0498 ms
+07/14/2021 17:27:39 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.6054 ms
+07/14/2021 17:27:42 HTTP "GET" "/api/Students/18" responded 200 in 121.4210 ms
+07/14/2021 17:28:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.3054 ms
+07/14/2021 17:28:02 HTTP "GET" "/api/Courses" responded 200 in 3.0920 ms
+07/14/2021 17:28:49 HTTP "OPTIONS" "/api/Students" responded 204 in 0.3973 ms
+07/14/2021 17:28:49 HTTP "POST" "/api/Students" responded 400 in 93.7233 ms
+07/14/2021 17:28:56 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0756 ms
+07/14/2021 17:28:56 HTTP "POST" "/api/Students" responded 200 in 341.6444 ms
+07/14/2021 17:28:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.5269 ms
+07/14/2021 17:52:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 626.2468 ms
+07/14/2021 17:52:31 HTTP "GET" "/api/Courses" responded 200 in 33.9128 ms
+07/14/2021 17:52:53 HTTP "OPTIONS" "/api/Students" responded 204 in 0.8239 ms
+07/14/2021 17:52:53 HTTP "POST" "/api/Students" responded 500 in 3.3594 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 17:52:53 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 17:54:01 HTTP "OPTIONS" "/api/Students" responded 204 in 29.6585 ms
+07/14/2021 17:54:01 HTTP "POST" "/api/Students" responded 500 in 16.6448 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 17:54:01 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:03:22 HTTP "OPTIONS" "/api/Students" responded 204 in 0.4645 ms
+07/14/2021 18:03:22 HTTP "POST" "/api/Students" responded 500 in 1.6376 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:03:22 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:03:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6308.2918 ms
+07/14/2021 18:03:42 HTTP "GET" "/api/Courses" responded 200 in 36.1757 ms
+07/14/2021 18:04:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.3257 ms
+07/14/2021 18:04:28 HTTP "GET" "/api/Courses" responded 200 in 3.0345 ms
+07/14/2021 18:04:46 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0477 ms
+07/14/2021 18:04:46 HTTP "POST" "/api/Students" responded 500 in 0.3948 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:04:46 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:06:04 HTTP "GET" "/api/Courses" responded 200 in 3.5461 ms
+07/14/2021 18:06:13 HTTP "GET" "/api/Courses" responded 200 in 3.6295 ms
+07/14/2021 18:06:28 HTTP "GET" "/api/Courses" responded 200 in 2.6141 ms
+07/14/2021 18:06:31 HTTP "GET" "/api/Courses" responded 200 in 3.8297 ms
+07/14/2021 18:08:00 Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Antiforgery.IAntiforgery' for the parameter 'antiforgery' of method 'Configure' on type 'StudentRegistration.Api.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Antiforgery.IAntiforgery' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.HostingStartup.<>c__DisplayClass1_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+07/14/2021 18:10:47 HTTP "GET" "/api/Courses" responded 200 in 955.6485 ms
+07/14/2021 18:10:50 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 258.9932 ms
+07/14/2021 18:23:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1543.2355 ms
+07/14/2021 18:23:26 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 1.9512 ms
+07/14/2021 18:23:26 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 1.9512 ms
+07/14/2021 18:23:26 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 1.9943 ms
+07/14/2021 18:24:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 21.2652 ms
+07/14/2021 18:25:05 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 42.0044 ms
+07/14/2021 18:25:05 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 41.6177 ms
+07/14/2021 18:25:05 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 35.4094 ms
+07/14/2021 18:25:14 HTTP "GET" "/api/Courses" responded 200 in 468.5164 ms
+07/14/2021 18:25:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 74.1357 ms
+07/14/2021 18:30:01 HTTP "GET" "/api/Courses" responded 200 in 5.7099 ms
+07/14/2021 18:30:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.7830 ms
+07/14/2021 18:30:12 HTTP "GET" "/api/Students/18" responded 200 in 39.1075 ms
+07/14/2021 18:30:22 HTTP "OPTIONS" "/api/Students" responded 204 in 0.4561 ms
+07/14/2021 18:30:22 HTTP "POST" "/api/Students" responded 500 in 9.0526 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:30:22 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:30:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.2709 ms
+07/14/2021 18:30:39 HTTP "GET" "/api/Students/14" responded 200 in 9.1622 ms
+07/14/2021 18:30:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3283 ms
+07/14/2021 18:31:06 HTTP "GET" "/api/Courses" responded 200 in 1.6762 ms
+07/14/2021 18:31:37 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1026 ms
+07/14/2021 18:31:37 HTTP "POST" "/api/Students" responded 500 in 0.5652 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:31:37 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:37:45 HTTP "GET" "/api/Courses" responded 200 in 16.5187 ms
+07/14/2021 18:37:51 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.6539 ms
+07/14/2021 18:38:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 99.3427 ms
+07/14/2021 18:38:33 HTTP "GET" "/api/Students/18" responded 200 in 6.2599 ms
+07/14/2021 18:38:37 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0618 ms
+07/14/2021 18:38:37 HTTP "POST" "/api/Students" responded 500 in 0.6732 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:38:37 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:39:37 HTTP "GET" "/api/Students/18" responded 200 in 9.5542 ms
+07/14/2021 18:39:38 HTTP "GET" "/api/Students/18" responded 200 in 6.5136 ms
+07/14/2021 18:39:50 HTTP "GET" "/api/Students/18" responded 200 in 8.9731 ms
+07/14/2021 18:41:25 HTTP "GET" "/api/Students/18" responded 200 in 10.4748 ms
+07/14/2021 18:41:27 HTTP "GET" "/api/Students/18" responded 200 in 7.4594 ms
+07/14/2021 18:41:43 HTTP "GET" "/api/Students/18" responded 200 in 7.5045 ms
+07/14/2021 18:42:19 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0741 ms
+07/14/2021 18:42:19 HTTP "POST" "/api/Students" responded 500 in 0.5547 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:42:19 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:48:30 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 38.2898 ms
+07/14/2021 18:48:30 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 31.5424 ms
+07/14/2021 18:48:30 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 35.5665 ms
+07/14/2021 18:48:36 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 2.1093 ms
+07/14/2021 18:48:36 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.2645 ms
+07/14/2021 18:48:36 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.3552 ms
+07/14/2021 18:48:47 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 200 in 574.4133 ms
+07/14/2021 18:49:26 HTTP "POST" "/api/Students" responded 500 in 2.5725 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:49:26 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:52:37 HTTP "POST" "/api/Students" responded 500 in 1.2455 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:52:37 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:52:50 HTTP "GET" "/api/Students/18" responded 200 in 89.6802 ms
+07/14/2021 18:52:53 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 25.3635 ms
+07/14/2021 18:52:57 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 62.0322 ms
+07/14/2021 18:53:15 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.0735 ms
+07/14/2021 18:53:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 27.9343 ms
+07/14/2021 18:54:01 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 41.5287 ms
+07/14/2021 18:54:01 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 41.5295 ms
+07/14/2021 18:54:01 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 41.1585 ms
+07/14/2021 18:54:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 500.3477 ms
+07/14/2021 18:54:47 HTTP "GET" "/api/Students/18" responded 200 in 56.0091 ms
+07/14/2021 18:54:52 HTTP "OPTIONS" "/api/Students" responded 204 in 0.7743 ms
+07/14/2021 18:54:52 HTTP "POST" "/api/Students" responded 500 in 1.1006 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:54:52 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:55:09 HTTP "GET" "/api/Students/18" responded 200 in 35.8831 ms
+07/14/2021 18:55:10 HTTP "GET" "/api/Students/18" responded 200 in 15.5537 ms
+07/14/2021 18:55:16 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1062 ms
+07/14/2021 18:55:16 HTTP "POST" "/api/Students" responded 500 in 0.4837 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:55:16 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:55:40 HTTP "GET" "/api/Students/18" responded 200 in 8.9670 ms
+07/14/2021 18:55:52 HTTP "GET" "/api/Students/18" responded 200 in 7.0172 ms
+07/14/2021 18:55:56 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0873 ms
+07/14/2021 18:55:56 HTTP "POST" "/api/Students" responded 500 in 0.6464 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:55:56 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:56:54 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 59.8206 ms
+07/14/2021 18:56:54 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 59.2684 ms
+07/14/2021 18:56:54 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 62.3129 ms
+07/14/2021 18:57:24 HTTP "OPTIONS" "/api/Students" responded 204 in 2.0787 ms
+07/14/2021 18:57:24 HTTP "POST" "/api/Students" responded 500 in 9.7330 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:57:24 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 18:57:27 HTTP "GET" "/api/Students/18" responded 200 in 616.4733 ms
+07/14/2021 18:57:31 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1269 ms
+07/14/2021 18:57:31 HTTP "POST" "/api/Students" responded 500 in 0.4205 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 18:57:31 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 19:00:14 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 42.0600 ms
+07/14/2021 19:00:14 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 41.6079 ms
+07/14/2021 19:00:14 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 42.0570 ms
+07/14/2021 19:00:28 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 1.2415 ms
+07/14/2021 19:00:28 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.2455 ms
+07/14/2021 19:00:28 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 1.0888 ms
+07/14/2021 19:00:32 HTTP "OPTIONS" "/api/Students" responded 204 in 1.2327 ms
+07/14/2021 19:00:32 HTTP "POST" "/api/Students" responded 500 in 15.7105 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 19:00:32 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 19:00:37 HTTP "GET" "/api/Students/18" responded 200 in 590.9540 ms
+07/14/2021 19:00:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 35.2509 ms
+07/14/2021 19:00:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 35.8621 ms
+07/14/2021 19:01:03 HTTP "GET" "/api/Students/18" responded 200 in 5.9662 ms
+07/14/2021 19:01:07 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1429 ms
+07/14/2021 19:01:07 HTTP "POST" "/api/Students" responded 500 in 0.5215 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 19:01:07 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 19:02:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1074.5402 ms
+07/14/2021 19:02:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 18.1279 ms
+07/14/2021 19:02:35 HTTP "GET" "/api/Students/18" responded 200 in 45.8673 ms
+07/14/2021 19:02:39 HTTP "OPTIONS" "/api/Students" responded 204 in 0.5638 ms
+07/14/2021 19:02:39 HTTP "POST" "/api/Students" responded 500 in 1.6543 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 19:02:39 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 19:02:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.4396 ms
+07/14/2021 19:17:22 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 443.9877 ms
+07/14/2021 19:17:25 HTTP "GET" "/api/Students/14" responded 200 in 165.5114 ms
+07/14/2021 19:17:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.1294 ms
+07/14/2021 19:17:28 HTTP "GET" "/api/Courses" responded 200 in 8.9091 ms
+07/14/2021 19:17:30 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 98.7552 ms
+07/14/2021 19:17:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.9484 ms
+07/14/2021 19:17:47 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.4125 ms
+07/14/2021 19:17:47 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.2167 ms
+07/14/2021 19:17:47 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.8696 ms
+07/14/2021 19:19:06 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 41.2030 ms
+07/14/2021 19:19:06 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 42.7486 ms
+07/14/2021 19:19:06 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 43.2592 ms
+07/14/2021 19:19:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 499.1232 ms
+07/14/2021 19:19:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.1314 ms
+07/14/2021 19:19:45 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.1979 ms
+07/14/2021 19:19:45 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.5415 ms
+07/14/2021 19:19:45 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.2953 ms
+07/14/2021 19:20:00 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 19:20:00 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 19:20:00 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 19:20:00 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 76.3184 ms
+07/14/2021 19:20:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 76.6656 ms
+07/14/2021 19:20:00 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 76.6673 ms
+07/14/2021 19:20:08 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 19:20:08 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 19:20:08 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 19:20:08 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.3820 ms
+07/14/2021 19:20:08 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 1.8007 ms
+07/14/2021 19:20:08 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 2.4914 ms
+07/14/2021 19:20:33 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 44.3909 ms
+07/14/2021 19:20:33 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 44.3893 ms
+07/14/2021 19:20:33 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 44.0203 ms
+07/14/2021 19:20:56 HTTP "GET" "/api/Students/14" responded 200 in 587.2182 ms
+07/14/2021 19:21:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 32.5221 ms
+07/14/2021 19:21:03 HTTP "GET" "/api/Courses" responded 200 in 10.2926 ms
+07/14/2021 19:21:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.1666 ms
+07/14/2021 19:21:37 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 40.1942 ms
+07/14/2021 19:21:37 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 40.0750 ms
+07/14/2021 19:21:37 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 39.6726 ms
+07/14/2021 19:21:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 609.9492 ms
+07/14/2021 19:21:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.0723 ms
+07/14/2021 19:24:56 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 47.8685 ms
+07/14/2021 19:24:56 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 52.0971 ms
+07/14/2021 19:24:56 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 52.5865 ms
+07/14/2021 19:25:40 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 54.5102 ms
+07/14/2021 19:25:40 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 53.9515 ms
+07/14/2021 19:25:40 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 54.5163 ms
+07/14/2021 19:26:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 482.9120 ms
+07/14/2021 19:26:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.0695 ms
+07/14/2021 19:26:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.2453 ms
+07/14/2021 19:26:21 HTTP "GET" "/api/Students/14" responded 200 in 48.8241 ms
+07/14/2021 19:26:24 HTTP "OPTIONS" "/api/Students" responded 204 in 0.8361 ms
+07/14/2021 19:26:24 HTTP "POST" "/api/Students" responded 400 in 17.8205 ms
+07/14/2021 19:26:52 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.1475 ms
+07/14/2021 19:26:52 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.4945 ms
+07/14/2021 19:26:52 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.1602 ms
+07/14/2021 19:26:55 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1003 ms
+07/14/2021 19:26:55 HTTP "POST" "/api/Students" responded 400 in 1.5809 ms
+07/14/2021 19:26:58 HTTP "GET" "/api/Students/14" responded 200 in 7.5263 ms
+07/14/2021 19:27:05 HTTP "OPTIONS" "/api/Students" responded 204 in 0.4077 ms
+07/14/2021 19:27:05 HTTP "POST" "/api/Students" responded 400 in 0.4834 ms
+07/14/2021 19:28:40 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 42.7197 ms
+07/14/2021 19:28:40 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 42.6836 ms
+07/14/2021 19:28:40 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 42.3244 ms
+07/14/2021 20:38:56 HTTP "OPTIONS" "/api/Students/14" responded 204 in 44.7757 ms
+07/14/2021 20:38:57 HTTP "OPTIONS" "/api/Students/14" responded 204 in 2.7836 ms
+07/14/2021 20:39:03 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.1275 ms
+07/14/2021 20:39:05 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.7207 ms
+07/14/2021 20:39:12 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.0793 ms
+07/14/2021 20:39:16 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 14.4629 ms
+07/14/2021 20:39:16 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.3120 ms
+07/14/2021 20:39:16 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.2997 ms
+07/14/2021 20:39:25 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.5048 ms
+07/14/2021 20:40:12 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.0958 ms
+07/14/2021 20:41:29 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.1188 ms
+07/14/2021 20:42:30 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 42.7662 ms
+07/14/2021 20:42:30 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 2.1111 ms
+07/14/2021 20:42:30 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 2.1272 ms
+07/14/2021 20:42:34 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 1.8813 ms
+07/14/2021 20:43:21 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 1.6359 ms
+07/14/2021 20:43:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2353.5360 ms
+07/14/2021 20:43:27 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.2725 ms
+07/14/2021 20:43:27 HTTP "GET" "/api/Students/14" responded 200 in 63.8118 ms
+07/14/2021 20:43:32 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1384 ms
+07/14/2021 20:43:32 HTTP "POST" "/api/Students" responded 500 in 8.1549 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/14/2021 20:43:32 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/14/2021 20:44:19 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 43.6846 ms
+07/14/2021 20:44:19 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 43.6545 ms
+07/14/2021 20:44:19 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 43.3197 ms
+07/14/2021 20:44:27 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 1.3496 ms
+07/14/2021 20:44:27 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.2852 ms
+07/14/2021 20:44:27 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.2263 ms
+07/14/2021 20:44:31 HTTP "OPTIONS" "/api/Students/14" responded 204 in 2.1659 ms
+07/14/2021 20:44:32 HTTP "GET" "/api/Students/14" responded 200 in 582.8655 ms
+07/14/2021 20:44:35 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1464 ms
+07/14/2021 20:44:35 HTTP "POST" "/api/Students" responded 400 in 19.2454 ms
+07/14/2021 20:45:38 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 36.8153 ms
+07/14/2021 20:45:38 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 36.7739 ms
+07/14/2021 20:45:38 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 36.2857 ms
+07/14/2021 20:45:44 HTTP "OPTIONS" "/api/Students" responded 204 in 2.3105 ms
+07/14/2021 20:45:44 HTTP "POST" "/api/Students" responded 400 in 52.3992 ms
+07/14/2021 20:46:14 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.1208 ms
+07/14/2021 20:46:15 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 645.7724 ms
+07/14/2021 20:46:31 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.2660 ms
+07/14/2021 20:46:31 HTTP "GET" "/api/Students/14" responded 200 in 61.4332 ms
+07/14/2021 20:46:49 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1194 ms
+07/14/2021 20:46:49 HTTP "POST" "/api/Students" responded 400 in 0.9443 ms
+07/14/2021 20:47:17 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:17 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:17 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:18 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 85.6151 ms
+07/14/2021 20:47:18 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 86.2242 ms
+07/14/2021 20:47:18 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 84.8429 ms
+07/14/2021 20:47:24 HTTP "OPTIONS" "/api/Students" responded 204 in 2.3133 ms
+07/14/2021 20:47:24 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:24 HTTP "POST" "/api/Students" responded 400 in 52.7769 ms
+07/14/2021 20:47:32 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:32 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.3571 ms
+07/14/2021 20:47:33 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:33 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.5266 ms
+07/14/2021 20:47:33 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:33 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.7986 ms
+07/14/2021 20:47:36 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.1382 ms
+07/14/2021 20:47:36 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:37 HTTP "GET" "/api/Students/14" responded 200 in 529.9821 ms
+07/14/2021 20:47:40 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1163 ms
+07/14/2021 20:47:40 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:47:40 HTTP "POST" "/api/Students" responded 400 in 0.8509 ms
+07/14/2021 20:48:15 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:15 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:15 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:15 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 77.7988 ms
+07/14/2021 20:48:15 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 77.4278 ms
+07/14/2021 20:48:15 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 77.8116 ms
+07/14/2021 20:48:22 HTTP "OPTIONS" "/api/Students/14" responded 204 in 2.8402 ms
+07/14/2021 20:48:22 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:23 HTTP "GET" "/api/Students/14" responded 200 in 700.0583 ms
+07/14/2021 20:48:26 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.1459 ms
+07/14/2021 20:48:26 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 145.8300 ms
+07/14/2021 20:48:30 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.1110 ms
+07/14/2021 20:48:30 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:30 HTTP "GET" "/api/Students/14" responded 200 in 7.2503 ms
+07/14/2021 20:48:35 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0804 ms
+07/14/2021 20:48:35 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:35 HTTP "POST" "/api/Students" responded 400 in 9.8662 ms
+07/14/2021 20:48:46 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:46 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:46 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/14/2021 20:48:46 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 64.6924 ms
+07/14/2021 20:48:46 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 65.0927 ms
+07/14/2021 20:48:46 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 65.0923 ms
+07/14/2021 20:49:38 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 48.7462 ms
+07/14/2021 20:49:38 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 30.7829 ms
+07/14/2021 20:49:38 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 47.4760 ms
+07/14/2021 20:51:27 HTTP "OPTIONS" "/api/Students/14" responded 204 in 32.4967 ms
+07/14/2021 20:51:28 HTTP "GET" "/api/Students/14" responded 200 in 582.2746 ms
+07/14/2021 20:51:30 HTTP "OPTIONS" "/api/Students" responded 204 in 0.4517 ms
+07/14/2021 20:51:30 HTTP "POST" "/api/Students" responded 400 in 10.6380 ms
+07/14/2021 20:51:49 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.1272 ms
+07/14/2021 20:52:11 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.0944 ms
+07/14/2021 20:52:13 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.0904 ms
+07/14/2021 20:52:31 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.1501 ms
+07/14/2021 20:52:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 160.6965 ms
+07/14/2021 20:52:35 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.0987 ms
+07/14/2021 20:52:35 HTTP "GET" "/api/Students/14" responded 200 in 16.1279 ms
+07/14/2021 20:52:39 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0721 ms
+07/14/2021 20:52:39 HTTP "POST" "/api/Students" responded 400 in 0.5987 ms
+07/14/2021 21:15:57 HTTP "OPTIONS" "/api/Students/14" responded 204 in 55.1678 ms
+07/14/2021 21:15:57 HTTP "GET" "/api/Students/14" responded 400 in 99.8293 ms
+07/14/2021 21:16:15 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 1.1228 ms
+07/14/2021 21:16:15 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 6.3779 ms
+07/14/2021 21:16:19 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 2.2687 ms
+07/14/2021 21:17:59 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 43.8593 ms
+07/14/2021 21:18:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 490.1882 ms
+07/14/2021 21:18:02 HTTP "OPTIONS" "/api/Courses" responded 204 in 1.0770 ms
+07/14/2021 21:18:02 HTTP "GET" "/api/Courses" responded 200 in 37.7091 ms
+07/14/2021 21:18:07 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.0898 ms
+07/14/2021 21:18:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.1824 ms
+07/14/2021 21:18:09 HTTP "OPTIONS" "/api/Students/17" responded 204 in 0.2030 ms
+07/14/2021 21:18:09 HTTP "GET" "/api/Students/17" responded 200 in 30.4435 ms
+07/14/2021 21:18:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 102.7267 ms
+07/14/2021 21:18:28 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.1182 ms
+07/14/2021 21:18:28 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.0453 ms
+07/14/2021 21:18:28 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.0522 ms
+07/14/2021 21:18:37 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.0465 ms
+07/14/2021 21:18:37 HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 0.0478 ms
+07/14/2021 21:18:37 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 0.0978 ms
+07/14/2021 21:18:56 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 200 in 9.1234 ms
+07/15/2021 00:34:50 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 200 in 926.8885 ms
+07/15/2021 00:35:47 HTTP "GET" "/api/Students?PageNumber=1&pageSize=5" responded 500 in 49.9796 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/15/2021 00:35:47 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/15/2021 00:38:44 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 77.8964 ms
+07/15/2021 00:40:44 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 2.9053 ms
+07/15/2021 00:42:17 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 1.1815 ms
+07/15/2021 00:42:28 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 0.6703 ms
+07/15/2021 00:42:35 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 0.5441 ms
+07/15/2021 00:44:30 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 500 in 38.1806 ms
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+07/15/2021 00:44:30 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.ValidateAntiforgeryTokenAuthorizationFilter' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+07/15/2021 00:47:06 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 71.6690 ms
+07/15/2021 11:44:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 260.3132 ms
+07/15/2021 11:45:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 2.8731 ms
+07/15/2021 12:25:44 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 12:25:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 137.6095 ms
+07/15/2021 12:25:50 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 12:25:50 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 17.0151 ms
+07/15/2021 12:26:02 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 12:26:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 1.3122 ms
+07/15/2021 12:26:37 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 12:26:37 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 104.2640 ms
+07/15/2021 12:26:47 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 2.6293 ms
+07/15/2021 12:26:47 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 12:26:47 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 2.6406 ms
+07/15/2021 13:13:21 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:13:21 HTTP "GET" "/api/Students?PageNumber=1&pageSize=2" responded 400 in 1.2491 ms
+07/15/2021 13:15:24 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:15:26 HTTP "GET" "/api/Students?PageNumber=2&pageSize=3" responded 200 in 2909.9668 ms
+07/15/2021 13:16:07 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 3.1439 ms
+07/15/2021 13:16:07 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:16:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 29.0616 ms
+07/15/2021 13:17:51 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 30.4963 ms
+07/15/2021 13:17:51 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:17:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 851.1085 ms
+07/15/2021 13:17:58 HTTP "OPTIONS" "/api/Students/14" responded 204 in 1.1370 ms
+07/15/2021 13:17:58 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:17:58 HTTP "GET" "/api/Students/14" responded 200 in 166.1227 ms
+07/15/2021 13:18:03 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0961 ms
+07/15/2021 13:18:03 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:18:03 HTTP "POST" "/api/Students" responded 400 in 11.6135 ms
+07/15/2021 13:19:42 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:19:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 16.5305 ms
+07/15/2021 13:19:44 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:19:44 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 47.4374 ms
+07/15/2021 13:20:04 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:20:04 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.3047 ms
+07/15/2021 13:21:12 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:21:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.9027 ms
+07/15/2021 13:21:26 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:21:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.5999 ms
+07/15/2021 13:22:02 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:22:02 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.3395 ms
+07/15/2021 13:22:12 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:22:12 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 0.2946 ms
+07/15/2021 13:22:22 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:22:22 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 20.5541 ms
+07/15/2021 13:22:26 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:22:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 15.6617 ms
+07/15/2021 13:24:12 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:24:12 HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 81.4811 ms
+07/15/2021 13:25:43 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:25:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 400 in 149.0056 ms
+07/15/2021 13:28:37 The cookie '"XSRF-TOKEN"' has set 'SameSite=None' and must also set 'Secure'.
+07/15/2021 13:28:38 HTTP "GET" "/api/Courses" responded 200 in 673.0444 ms
+07/15/2021 17:46:05 HTTP "POST" "/api/Users/register?username=bijoy&password=b12345678" responded 500 in 1010.3862 ms
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'SELECT'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddUserAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 30
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:a6da69df-dd61-4878-9bc0-79be26ddd081
+Error Number:156,State:1,Class:15
+07/15/2021 17:46:06 An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'SELECT'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddUserAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 30
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:a6da69df-dd61-4878-9bc0-79be26ddd081
+Error Number:156,State:1,Class:15
+07/15/2021 17:49:03 HTTP "POST" "/api/Users/register?username=bijoy&password=b12345678" responded 500 in 343.3988 ms
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'SELECT'.
+Must declare the scalar variable "@UID".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddUserAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 32
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:1f49614a-7e49-4f1d-8ac8-a9b14375e46f
+Error Number:156,State:1,Class:15
+07/15/2021 17:49:03 An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'SELECT'.
+Must declare the scalar variable "@UID".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddUserAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 32
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:1f49614a-7e49-4f1d-8ac8-a9b14375e46f
+Error Number:156,State:1,Class:15
+07/15/2021 17:50:34 HTTP "POST" "/api/Users/register?username=bijoy&password=b12345678" responded 500 in 404.5703 ms
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'StudentRegistrationDb.dbo.Users', column 'PasswordHash'. Truncated value: ''.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddUserAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 31
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:2dbc31af-4020-406a-a586-22042fb17b0f
+Error Number:2628,State:1,Class:16
+07/15/2021 17:50:34 An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'StudentRegistrationDb.dbo.Users', column 'PasswordHash'. Truncated value: ''.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddUserAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 31
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:2dbc31af-4020-406a-a586-22042fb17b0f
+Error Number:2628,State:1,Class:16
+07/15/2021 17:58:24 HTTP "POST" "/api/Users/register?username=bijoy&password=b21525" responded 500 in 413.8117 ms
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'StudentRegistrationDb.dbo.Users', column 'PasswordHash'. Truncated value: ''.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 26
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:8a9b3e64-2f3a-413c-96ce-957cf4aae8aa
+Error Number:2628,State:1,Class:16
+07/15/2021 17:58:24 An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'StudentRegistrationDb.dbo.Users', column 'PasswordHash'. Truncated value: ''.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 26
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:8a9b3e64-2f3a-413c-96ce-957cf4aae8aa
+Error Number:2628,State:1,Class:16
+07/15/2021 18:06:25 HTTP "POST" "/api/Users/register?username=bijoy&password=b12345678" responded 500 in 13.1355 ms
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'StudentRegistrationDb.dbo.Users', column 'PasswordHash'. Truncated value: ''.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 26
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:58f19db2-ecc1-4319-8364-60753c902123
+Error Number:2628,State:1,Class:16
+07/15/2021 18:06:25 An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated in table 'StudentRegistrationDb.dbo.Users', column 'PasswordHash'. Truncated value: ''.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at StudentRegistration.DataAccess.Repository.UserRepository.AddAsync(User entity) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.DataAccess\Repository\UserRepository.cs:line 26
+   at StudentRegistration.Api.Controllers.UsersController.Register(String username, String password) in G:\Jobs or works\S3Innovate\StudentRegistration\Api\StudentRegistration\StudentRegistration.Api\Controllers\UsersController.cs:line 36
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:58f19db2-ecc1-4319-8364-60753c902123
+Error Number:2628,State:1,Class:16
+07/15/2021 18:10:16 HTTP "POST" "/api/Users/register?username=bijoy&password=b12345678" responded 200 in 39.5752 ms
+07/15/2021 18:14:48 HTTP "POST" "/api/Users/register?username=zb&password=b21525" responded 200 in 333.9769 ms
+07/16/2021 11:24:28 HTTP "POST" "/api/Users/login" responded 200 in 1055.0107 ms
+07/16/2021 13:37:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2240.3565 ms
+07/16/2021 13:37:42 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 12.6861 ms
+07/16/2021 13:37:44 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 40.8905 ms
+07/16/2021 13:37:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.1196 ms
+07/16/2021 13:38:00 HTTP "GET" "/api/Students/18" responded 200 in 235.4644 ms
+07/16/2021 13:38:15 HTTP "OPTIONS" "/api/Students" responded 204 in 0.4701 ms
+07/16/2021 13:38:16 HTTP "POST" "/api/Students" responded 200 in 515.4066 ms
+07/16/2021 13:38:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.4982 ms
+07/16/2021 13:38:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 25.1095 ms
+07/16/2021 13:38:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 7.1456 ms
+07/16/2021 13:38:21 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bio" responded 200 in 5.8404 ms
+07/16/2021 13:38:21 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=bi" responded 200 in 6.6583 ms
+07/16/2021 13:38:21 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=b" responded 200 in 6.5406 ms
+07/16/2021 13:38:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.1081 ms
+07/16/2021 13:38:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.8264 ms
+07/16/2021 13:38:25 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 2.4553 ms
+07/16/2021 13:38:26 HTTP "GET" "/api/Students/26" responded 200 in 3.2803 ms
+07/16/2021 13:38:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.8953 ms
+07/16/2021 13:38:30 HTTP "GET" "/api/Courses" responded 200 in 7.6630 ms
+07/16/2021 13:38:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 4.2855 ms
+07/16/2021 13:40:30 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.3576 ms
+07/16/2021 13:44:49 HTTP "GET" "/api/Courses" responded 200 in 16.1436 ms
+07/16/2021 13:44:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.5506 ms
+07/16/2021 13:45:49 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 6.7176 ms
+07/16/2021 13:45:50 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 3.7702 ms
+07/16/2021 13:45:51 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 2.2617 ms
+07/16/2021 13:49:03 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 7.3833 ms
+07/16/2021 13:49:05 HTTP "GET" "/api/Courses" responded 200 in 4.9677 ms
+07/16/2021 13:57:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 115.7773 ms
+07/16/2021 15:07:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 151.5702 ms
+07/16/2021 15:08:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.7975 ms
+07/16/2021 15:08:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.0404 ms
+07/16/2021 15:08:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 15.5760 ms
+07/16/2021 15:09:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 34.1432 ms
+07/16/2021 15:38:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 108.2397 ms
+07/16/2021 15:38:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 30.1144 ms
+07/16/2021 15:38:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.9634 ms
+07/16/2021 15:38:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.6561 ms
+07/16/2021 15:38:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.2718 ms
+07/16/2021 15:38:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.3796 ms
+07/16/2021 15:38:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.9163 ms
+07/16/2021 15:38:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.8474 ms
+07/16/2021 15:39:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.2335 ms
+07/16/2021 15:39:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8541 ms
+07/16/2021 15:39:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0335 ms
+07/16/2021 15:39:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7854 ms
+07/16/2021 15:39:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0397 ms
+07/16/2021 15:39:49 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.5224 ms
+07/16/2021 15:40:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.4884 ms
+07/16/2021 15:40:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.8808 ms
+07/16/2021 15:40:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.2155 ms
+07/16/2021 15:40:19 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7627 ms
+07/16/2021 15:40:21 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.0861 ms
+07/16/2021 15:40:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.4691 ms
+07/16/2021 15:41:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.6420 ms
+07/16/2021 15:41:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.6062 ms
+07/16/2021 15:41:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7548 ms
+07/16/2021 15:41:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.0835 ms
+07/16/2021 15:41:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.4049 ms
+07/16/2021 15:41:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8925 ms
+07/16/2021 15:42:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.2296 ms
+07/16/2021 15:42:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.5666 ms
+07/16/2021 15:42:23 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.5741 ms
+07/16/2021 15:42:30 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.2753 ms
+07/16/2021 15:42:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 25.3136 ms
+07/16/2021 15:42:56 HTTP "GET" "/api/Students/14" responded 200 in 6.4484 ms
+07/16/2021 15:43:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.8910 ms
+07/16/2021 15:43:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 15.2410 ms
+07/16/2021 15:43:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.5260 ms
+07/16/2021 15:43:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.2300 ms
+07/16/2021 15:43:21 HTTP "GET" "/api/Students/14" responded 200 in 4.2419 ms
+07/16/2021 15:43:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.0230 ms
+07/16/2021 15:43:27 HTTP "GET" "/api/Courses" responded 200 in 1.6114 ms
+07/16/2021 15:43:40 HTTP "GET" "/api/Courses" responded 200 in 1.6170 ms
+07/16/2021 15:43:42 HTTP "GET" "/api/Courses" responded 200 in 0.7599 ms
+07/16/2021 15:43:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.1344 ms
+07/16/2021 15:43:46 HTTP "GET" "/api/Students/14" responded 200 in 4.6492 ms
+07/16/2021 15:43:54 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1211 ms
+07/16/2021 15:43:54 HTTP "POST" "/api/Students" responded 200 in 11.3983 ms
+07/16/2021 15:43:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0988 ms
+07/16/2021 15:46:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.0861 ms
+07/16/2021 15:46:11 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.2549 ms
+07/16/2021 15:46:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.3026 ms
+07/16/2021 15:46:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3833 ms
+07/16/2021 15:49:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 16.0602 ms
+07/16/2021 15:49:05 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 17.0673 ms
+07/16/2021 15:49:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.5077 ms
+07/16/2021 15:49:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.6838 ms
+07/16/2021 15:49:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.4767 ms
+07/16/2021 15:49:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.1695 ms
+07/16/2021 15:49:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8944 ms
+07/16/2021 15:49:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.1720 ms
+07/16/2021 15:49:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0035 ms
+07/16/2021 15:49:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.4011 ms
+07/16/2021 15:49:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3651 ms
+07/16/2021 15:49:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0069 ms
+07/16/2021 15:50:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.9544 ms
+07/16/2021 15:50:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.9833 ms
+07/16/2021 15:50:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.8545 ms
+07/16/2021 15:51:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.9063 ms
+07/16/2021 15:51:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.4009 ms
+07/16/2021 15:51:51 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.1663 ms
+07/16/2021 15:51:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9582 ms
+07/16/2021 15:52:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.9773 ms
+07/16/2021 15:53:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.7212 ms
+07/16/2021 15:53:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8006 ms
+07/16/2021 15:53:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0453 ms
+07/16/2021 15:53:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 5.5587 ms
+07/16/2021 15:53:18 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.4161 ms
+07/16/2021 15:53:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.6609 ms
+07/16/2021 15:53:50 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0381 ms
+07/16/2021 15:53:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8229 ms
+07/16/2021 15:54:02 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.2132 ms
+07/16/2021 15:54:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 32.2428 ms
+07/16/2021 15:54:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8060 ms
+07/16/2021 15:54:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.6572 ms
+07/16/2021 15:54:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9625 ms
+07/16/2021 15:54:16 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.2718 ms
+07/16/2021 15:54:22 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7294 ms
+07/16/2021 15:54:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 25.3857 ms
+07/16/2021 15:54:26 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.1945 ms
+07/16/2021 15:54:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.7391 ms
+07/16/2021 15:54:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3860 ms
+07/16/2021 15:54:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.2374 ms
+07/16/2021 15:54:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0807 ms
+07/16/2021 15:54:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0011 ms
+07/16/2021 15:55:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9329 ms
+07/16/2021 15:55:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0822 ms
+07/16/2021 15:55:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.2572 ms
+07/16/2021 15:55:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0675 ms
+07/16/2021 15:55:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9829 ms
+07/16/2021 15:56:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 33.7613 ms
+07/16/2021 15:56:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.1098 ms
+07/16/2021 15:57:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.5194 ms
+07/16/2021 15:57:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 58.5108 ms
+07/16/2021 15:57:50 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 15.6848 ms
+07/16/2021 15:57:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.6020 ms
+07/16/2021 15:58:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.1541 ms
+07/16/2021 15:58:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.5335 ms
+07/16/2021 15:58:22 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.9652 ms
+07/16/2021 15:58:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.8477 ms
+07/16/2021 16:00:42 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 41.1026 ms
+07/16/2021 16:01:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.2173 ms
+07/16/2021 16:01:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.0857 ms
+07/16/2021 16:02:03 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.3345 ms
+07/16/2021 16:02:04 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.9611 ms
+07/16/2021 16:02:57 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.4137 ms
+07/16/2021 16:02:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.3754 ms
+07/16/2021 16:03:20 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.1910 ms
+07/16/2021 16:03:21 HTTP "POST" "/api/Users/login" responded 200 in 185.0197 ms
+07/16/2021 16:04:53 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.1868 ms
+07/16/2021 16:05:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.1735 ms
+07/16/2021 16:05:48 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 27.0614 ms
+07/16/2021 16:05:54 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.2867 ms
+07/16/2021 16:06:12 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0324 ms
+07/16/2021 16:06:12 HTTP "POST" "/api/Users/login" responded 200 in 2.6468 ms
+07/16/2021 16:06:15 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.2587 ms
+07/16/2021 16:07:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.6515 ms
+07/16/2021 16:07:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.0711 ms
+07/16/2021 16:07:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.2887 ms
+07/16/2021 16:07:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.2465 ms
+07/16/2021 16:07:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.1335 ms
+07/16/2021 16:08:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.6392 ms
+07/16/2021 16:08:04 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0487 ms
+07/16/2021 16:08:04 HTTP "POST" "/api/Users/login" responded 401 in 18.4534 ms
+07/16/2021 16:08:18 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0429 ms
+07/16/2021 16:08:18 HTTP "POST" "/api/Users/login" responded 401 in 5.4841 ms
+07/16/2021 16:08:28 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0464 ms
+07/16/2021 16:08:28 HTTP "POST" "/api/Users/login" responded 200 in 0.9461 ms
+07/16/2021 16:08:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.0019 ms
+07/16/2021 16:09:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.5209 ms
+07/16/2021 16:09:06 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 18.5541 ms
+07/16/2021 16:09:22 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.3718 ms
+07/16/2021 16:09:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3404 ms
+07/16/2021 16:09:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.8719 ms
+07/16/2021 16:09:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.2426 ms
+07/16/2021 16:09:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0078 ms
+07/16/2021 16:09:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.2315 ms
+07/16/2021 16:09:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.0877 ms
+07/16/2021 16:09:51 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0537 ms
+07/16/2021 16:09:51 HTTP "POST" "/api/Users/login" responded 200 in 1.9365 ms
+07/16/2021 16:10:13 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.6964 ms
+07/16/2021 16:10:24 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.1624 ms
+07/16/2021 16:10:24 HTTP "POST" "/api/Users/login" responded 200 in 1.7918 ms
+07/16/2021 16:10:34 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3185 ms
+07/16/2021 16:10:52 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0456 ms
+07/16/2021 16:10:52 HTTP "POST" "/api/Users/login" responded 200 in 1.0746 ms
+07/16/2021 16:11:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.2428 ms
+07/16/2021 16:11:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3587 ms
+07/16/2021 16:11:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.4781 ms
+07/16/2021 16:11:54 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0403 ms
+07/16/2021 16:11:55 HTTP "POST" "/api/Users/login" responded 200 in 2.3491 ms
+07/16/2021 16:12:58 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.1628 ms
+07/16/2021 16:13:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.5334 ms
+07/16/2021 16:34:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 25.8387 ms
+07/16/2021 16:34:59 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.1879 ms
+07/16/2021 16:37:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.8699 ms
+07/16/2021 16:38:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.1744 ms
+07/16/2021 18:10:01 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 67.9142 ms
+07/16/2021 18:11:15 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.1036 ms
+07/16/2021 18:11:31 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 19.0552 ms
+07/16/2021 18:11:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 34.4498 ms
+07/16/2021 18:12:36 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 23.4100 ms
+07/16/2021 18:12:37 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3605 ms
+07/16/2021 18:13:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.7116 ms
+07/16/2021 18:14:14 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.0951 ms
+07/16/2021 18:14:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 3.6030 ms
+07/16/2021 18:14:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8471 ms
+07/16/2021 18:16:56 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.9186 ms
+07/16/2021 18:17:08 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.1591 ms
+07/16/2021 18:17:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 4.0651 ms
+07/16/2021 18:17:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.8247 ms
+07/16/2021 18:18:20 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.3629 ms
+07/16/2021 18:18:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.8214 ms
+07/16/2021 18:18:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.9854 ms
+07/16/2021 18:18:55 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.9450 ms
+07/16/2021 18:22:38 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 7.7776 ms
+07/16/2021 18:22:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 4.4464 ms
+07/16/2021 18:23:01 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0580 ms
+07/16/2021 18:23:01 HTTP "POST" "/api/Users/login" responded 200 in 4.8946 ms
+07/16/2021 18:23:33 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 17.5312 ms
+07/16/2021 18:24:09 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 13.9293 ms
+07/16/2021 18:25:47 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.3154 ms
+07/16/2021 18:25:53 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.0332 ms
+07/16/2021 18:26:10 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 16.4448 ms
+07/16/2021 18:26:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.3776 ms
+07/16/2021 18:26:30 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.9321 ms
+07/16/2021 18:27:24 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.3099 ms
+07/16/2021 18:27:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.0415 ms
+07/16/2021 18:27:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 8.7697 ms
+07/16/2021 18:27:35 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 10.8177 ms
+07/16/2021 18:27:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.9915 ms
+07/16/2021 18:27:52 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.8972 ms
+07/16/2021 19:00:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 21.1851 ms
+07/16/2021 19:01:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 112.9653 ms
+07/16/2021 19:02:28 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.2993 ms
+07/16/2021 19:02:29 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.9056 ms
+07/16/2021 19:02:39 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.8248 ms
+07/16/2021 19:02:41 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.7382 ms
+07/16/2021 19:02:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.6822 ms
+07/16/2021 19:02:45 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 1.8714 ms
+07/16/2021 19:02:56 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0475 ms
+07/16/2021 19:02:56 HTTP "POST" "/api/Users/login" responded 200 in 3.0946 ms
+07/16/2021 19:03:05 HTTP "GET" "/api/Students/18" responded 200 in 8.6223 ms
+07/16/2021 19:03:07 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.9839 ms
+07/16/2021 19:03:12 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 2.4132 ms
+07/16/2021 19:03:46 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.5765 ms
+07/16/2021 19:04:12 HTTP "GET" "/api/Students?pageNumber=2&pageSize=5&searchBy=" responded 200 in 3.2843 ms
+07/16/2021 19:04:13 HTTP "GET" "/api/Students?pageNumber=3&pageSize=5&searchBy=" responded 200 in 3.4269 ms
+07/16/2021 19:11:40 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 20.4586 ms
+07/16/2021 19:13:25 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 808.1633 ms
+07/16/2021 19:13:49 HTTP "OPTIONS" "/api/Users/login" responded 204 in 1.7293 ms
+07/16/2021 19:13:49 HTTP "POST" "/api/Users/login" responded 200 in 221.4992 ms
+07/16/2021 19:13:52 HTTP "OPTIONS" "/api/Students/14" responded 204 in 0.1497 ms
+07/16/2021 19:13:52 HTTP "GET" "/api/Students/14" responded 200 in 132.7971 ms
+07/16/2021 19:14:16 HTTP "GET" "/api/Students/14" responded 401 in 9.1385 ms
+07/16/2021 19:14:27 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 12.0545 ms
+07/16/2021 19:14:31 HTTP "GET" "/api/Students/17" responded 401 in 1.4490 ms
+07/16/2021 19:15:04 HTTP "OPTIONS" "/api/Students/17" responded 204 in 0.1066 ms
+07/16/2021 19:15:04 HTTP "GET" "/api/Students/17" responded 200 in 10.4647 ms
+07/16/2021 19:15:11 HTTP "OPTIONS" "/api/Students" responded 204 in 0.1342 ms
+07/16/2021 19:15:11 HTTP "POST" "/api/Students" responded 200 in 73.3833 ms
+07/16/2021 19:15:11 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.0569 ms
+07/16/2021 19:15:11 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 6.6546 ms
+07/16/2021 19:15:21 HTTP "OPTIONS" "/api/Students/17" responded 204 in 0.1816 ms
+07/16/2021 19:15:21 HTTP "DELETE" "/api/Students/17" responded 200 in 55.0178 ms
+07/16/2021 19:15:21 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.2176 ms
+07/16/2021 19:15:21 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 19.0674 ms
+07/16/2021 19:15:28 HTTP "OPTIONS" "/api/Courses" responded 204 in 0.2283 ms
+07/16/2021 19:15:28 HTTP "GET" "/api/Courses" responded 200 in 7.2243 ms
+07/16/2021 19:15:43 HTTP "OPTIONS" "/api/Students" responded 204 in 0.0961 ms
+07/16/2021 19:15:43 HTTP "POST" "/api/Students" responded 200 in 154.4525 ms
+07/16/2021 19:15:43 HTTP "OPTIONS" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 204 in 0.1100 ms
+07/16/2021 19:15:43 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 9.4040 ms
+07/16/2021 19:16:41 HTTP "OPTIONS" "/api/Students/19" responded 204 in 0.1173 ms
+07/16/2021 19:16:41 HTTP "GET" "/api/Students/19" responded 200 in 10.0196 ms
+07/16/2021 19:17:00 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 11.9664 ms
+07/16/2021 19:18:09 HTTP "GET" "/api/Student" responded 404 in 0.1047 ms
+07/16/2021 19:18:46 HTTP "GET" "/api/Students" responded 200 in 10.4109 ms
+07/16/2021 19:19:42 HTTP "GET" "/api/Users" responded 404 in 0.1017 ms
+07/16/2021 19:19:52 HTTP "GET" "/api/Users/login" responded 405 in 0.1533 ms
+07/16/2021 19:20:54 HTTP "GET" "/api/Users/login" responded 405 in 0.0970 ms
+07/16/2021 19:21:24 HTTP "POST" "/api/Users/login" responded 200 in 5.1538 ms
+07/16/2021 19:22:16 HTTP "GET" "/api/Student" responded 404 in 0.4712 ms
+07/16/2021 19:22:49 HTTP "GET" "/api/Student" responded 404 in 0.7358 ms
+07/16/2021 19:22:52 HTTP "GET" "/api/Student" responded 404 in 0.1251 ms
+07/16/2021 19:24:29 HTTP "GET" "/api/Users/login" responded 405 in 0.0946 ms
+07/16/2021 19:24:38 HTTP "GET" "/api/Users/login" responded 405 in 0.1000 ms
+07/16/2021 19:25:18 HTTP "GET" "/api/Users/login" responded 405 in 0.0728 ms
+07/16/2021 19:27:32 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 16.2733 ms
+07/16/2021 19:27:45 HTTP "OPTIONS" "/api/Users/login" responded 204 in 0.0814 ms
+07/16/2021 19:27:45 HTTP "POST" "/api/Users/login" responded 200 in 4.2130 ms
+07/16/2021 19:36:07 HTTP "GET" "/api/Student/edit/18" responded 404 in 0.4677 ms
+07/16/2021 19:36:17 HTTP "OPTIONS" "/api/Students/15" responded 204 in 0.0442 ms
+07/16/2021 19:36:17 HTTP "GET" "/api/Students/15" responded 200 in 16.8703 ms
+07/16/2021 19:36:39 HTTP "GET" "/api/Student/edit/15" responded 404 in 0.9709 ms
+07/16/2021 19:38:17 HTTP "GET" "/api/Students?pageNumber=1&pageSize=5&searchBy=" responded 200 in 14.3948 ms

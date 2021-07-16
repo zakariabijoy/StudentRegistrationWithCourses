@@ -6,12 +6,11 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import {  Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { CourseCheckBox } from 'src/app/models/courseCheckBox.model';
 import { CourseService } from 'src/app/services/course.service';
 import { StudentService } from 'src/app/services/student.service';
-
 
 @Component({
   selector: 'app-student',
@@ -27,7 +26,7 @@ export class StudentComponent implements OnInit {
     private courseService: CourseService,
     private fb: FormBuilder,
     private toastr: ToastrService,
-    private router: Router,
+    private router: Router
   ) {}
 
   ngOnInit(): void {

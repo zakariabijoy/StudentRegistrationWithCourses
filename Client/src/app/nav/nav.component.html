@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/students">Student Registration</a>
+
+    <ul class="navbar-nav mr-auto" *ngIf="accountService.currentUser$ | async">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/students">Students </a>
+      </li>
+      <li class="nav-item" *ngIf="accountService.currentUser$ | async">
+        <a class="nav-link" (click)="logout()" href="#">Logout</a>
+      </li>
+    </ul>
+    <label *ngIf="accountService.currentUser$ | async" class="text-light"
+      >Welcome User</label
+    >
+    <form
+      *ngIf="(accountService.currentUser$ | async) === null"
+      class="form-inline mt-2 mt-md-0"
+      [formGroup]="loginForm"
+      (ngSubmit)="loginForm.valid && login()"
+      autocomplete="off"
+    >
+      <input
+        class="form-control mr-sm-2"
+        type="text"
+        placeholder="UserName"
+        [class.is-invalid]="
+          loginForm.get('userName').errors && loginForm.get('userName').touched
+        "
+        formControlName="userName"
+      />
+      <input
+        class="form-control mr-sm-2"
+        type="password"
+        placeholder="Password"
+        [class.is-invalid]="
+          loginForm.get('password').errors && loginForm.get('password').touched
+        "
+        formControlName="password"
+      />
+      <button
+        class="btn btn-outline-success my-2 my-sm-0"
+        type="submit"
+        [disabled]="!loginForm.valid"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</nav>

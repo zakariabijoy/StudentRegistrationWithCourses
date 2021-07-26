@@ -46,28 +46,28 @@ namespace StudentRegistration.Api.Controllers
            
         }
 
-        [HttpPost("login")]
-        public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
-        {
-            var user = await _unitOfWork.Users.GetByNameAsync(loginDto.UserName.ToLower());
+        //[HttpPost("login")]
+        //public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
+        //{
+        //    var user = await _unitOfWork.Users.GetByNameAsync(loginDto.UserName.ToLower());
 
-            if (user == null) return Unauthorized("Invalid UserName");
+        //    if (user == null) return Unauthorized("Invalid UserName");
 
-            using var hmac = new HMACSHA512(user.PasswordSalt);
+        //    using var hmac = new HMACSHA512(user.PasswordSalt);
 
-            var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
+        //    var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
 
-            for (int i = 0; i < computedHash.Length; i++)
-            {
-                if (computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password");
-            }
+        //    for (int i = 0; i < computedHash.Length; i++)
+        //    {
+        //        if (computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password");
+        //    }
 
-            return new UserDto
-            {
-                UserName = user.Name,
-                Token = _tokenService.CreateToken(user)
-            };
-        }
+        //    return new UserDto
+        //    {
+        //        UserName = user.Name,
+        //        Token = _tokenService.CreateToken(user)
+        //    };
+        //}
 
 
 

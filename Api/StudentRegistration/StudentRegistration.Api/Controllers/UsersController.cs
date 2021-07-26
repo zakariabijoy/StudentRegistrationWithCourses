@@ -101,7 +101,7 @@ namespace StudentRegistration.Api.Controllers
             // check if there's an user with the given username
             var user = await _unitOfWork.Users.GetByNameAsync(model.UserName.ToLower());
 
-            if (user == null) return Unauthorized("Invalid UserName");
+            if (user == null) return BadRequest("Invalid UserName");
 
             using var hmac = new HMACSHA512(user.PasswordSalt);
 
@@ -109,7 +109,7 @@ namespace StudentRegistration.Api.Controllers
 
             for (int i = 0; i < computedHash.Length; i++)
             {
-                if (computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password");
+                if (computedHash[i] != user.PasswordHash[i]) return BadRequest("Invalid Password");
             }
 
 

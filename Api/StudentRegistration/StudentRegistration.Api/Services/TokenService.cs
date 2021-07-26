@@ -16,14 +16,13 @@ namespace StudentRegistration.Api.Services
     {
         private readonly SymmetricSecurityKey _key;
         private readonly IConfiguration _config;
-        private readonly TokenValidationParameters _tokenValidationParameters;
+
         private readonly IUnitOfWork _unitOfWork;
 
-        public TokenService(IConfiguration config, TokenValidationParameters tokenValidationParameters, IUnitOfWork unitOfWork)
+        public TokenService(IConfiguration config,  IUnitOfWork unitOfWork)
         {
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Tokenkey"]));
             _config = config;
-            _tokenValidationParameters = tokenValidationParameters;
             _unitOfWork = unitOfWork;
         }
 

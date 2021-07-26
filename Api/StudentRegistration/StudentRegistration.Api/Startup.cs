@@ -45,7 +45,7 @@ namespace StudentRegistration.Api
                 ClockSkew = TimeSpan.Zero
 
             };
-            services.AddSingleton(tokenvalidaionParams);
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {

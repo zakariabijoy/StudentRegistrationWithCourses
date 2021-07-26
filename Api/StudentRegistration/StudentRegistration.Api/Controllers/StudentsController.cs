@@ -32,6 +32,7 @@ namespace StudentRegistration.Api.Controllers
         }
         // GET: api/<StudentsController>
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Get([FromQuery] StudentsParams studentsParams)
         {
             var students = await _unitOfWork.Students.GetAllAsyncWithPaginationAsync(studentsParams);

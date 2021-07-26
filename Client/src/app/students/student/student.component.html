@@ -1,7 +1,11 @@
 <br />
 <br />
 <br />
-<form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && register()">
+<form
+  [formGroup]="registerForm"
+  (ngSubmit)="registerForm.valid && register()"
+  *ngIf="registerForm"
+>
   <h2 class="text-center text-primary">Register Student</h2>
   <hr />
   <div class="container">

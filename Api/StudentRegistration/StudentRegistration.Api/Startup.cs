@@ -34,16 +34,22 @@ namespace StudentRegistration.Api
             services.AddCors();
             services.AddDataAccessServices();
             services.AddScoped<ITokenService, TokenService>();
+
+            var tokenvalidaionParams = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokenkey"])),
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ValidateLifetime = true,
+                ClockSkew = TimeSpan.Zero
+
+            };
+            services.AddSingleton(tokenvalidaionParams);
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokenkey"])),
-                        ValidateIssuer = false,
-                        ValidateAudience = false
-                    };
+                    options.TokenValidationParameters = tokenvalidaionParams;
                 });
 
 

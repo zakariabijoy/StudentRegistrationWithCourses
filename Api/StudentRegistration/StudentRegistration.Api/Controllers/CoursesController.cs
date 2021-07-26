@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using StudentRegistration.Api.DTOs;
 using StudentRegistration.DataAccess.Repository.Interfaces;
@@ -26,6 +27,7 @@ namespace StudentRegistration.Api.Controllers
         }
         // GET: api/<CoursesController>
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<List<CourseCheckBoxDto>>> Get()
         {
           var courses =  await _unitOfWork.Courses.GetAllAsync();

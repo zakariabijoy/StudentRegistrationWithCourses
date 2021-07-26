@@ -6,15 +6,19 @@
       <li class="nav-item">
         <a class="nav-link" routerLink="/students">Students </a>
       </li>
-      <li class="nav-item" *ngIf="accountService.currentUser$ | async">
-        <a class="nav-link" (click)="logout()" href="#">Logout</a>
-      </li>
     </ul>
+
     <label *ngIf="accountService.currentUser$ | async" class="text-light"
       >Welcome User</label
     >
+    <a
+      class="btn btn-primary ml-2"
+      (click)="logout()"
+      *ngIf="accountService.currentUser$ | async"
+      >Logout</a
+    >
     <form
-      *ngIf="(accountService.currentUser$ | async) === null"
+      *ngIf="(accountService.currentUser$ | async) === null && loginForm"
       class="form-inline mt-2 mt-md-0"
       [formGroup]="loginForm"
       (ngSubmit)="loginForm.valid && login()"

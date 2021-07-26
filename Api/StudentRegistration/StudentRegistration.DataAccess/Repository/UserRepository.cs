@@ -48,9 +48,11 @@ namespace StudentRegistration.DataAccess.Repository
             throw new NotImplementedException();
         }
 
-        public Task<User> GetByIdAsync(int id)
+        public async Task<User> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var sql = "select * from Users  where UserId = @id";
+            var user = await db.QueryAsync<User>(sql, new { id });
+            return user.FirstOrDefault();
         }
 
         public async Task<User> GetByNameAsync(string name)

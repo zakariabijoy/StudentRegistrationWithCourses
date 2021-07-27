@@ -35,14 +35,16 @@ namespace StudentRegistration.Api
             services.AddDataAccessServices();
             services.AddScoped<ITokenService, TokenService>();
 
+
+            #region Jwt Authentication
             var tokenvalidaionParams = new TokenValidationParameters
             {
-                ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokenkey"])),
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ValidateLifetime = true,
-                ClockSkew = TimeSpan.Zero
+                ValidateIssuerSigningKey = true,  //Gets or sets a boolean that controls if validation of the SecurityKey that signed the securityToken is called.
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokenkey"])),  // Gets or sets the SecurityKey that is to be used for signature validation.
+                ValidateIssuer = false,  //Gets or sets a boolean to control if the issuer will be validated during token validation.
+                ValidateAudience = false, // Gets or sets a boolean to control if the audience will be validated during token validation.
+                ValidateLifetime = true,  //Gets or sets a boolean to control if the lifetime will be validated during token validation.
+                ClockSkew = TimeSpan.Zero  //Gets or sets the clock skew to apply when validating a time.
 
             };
 
@@ -51,6 +53,9 @@ namespace StudentRegistration.Api
                 {
                     options.TokenValidationParameters = tokenvalidaionParams;
                 });
+            #endregion
+
+
 
 
             services.AddControllersWithViews();

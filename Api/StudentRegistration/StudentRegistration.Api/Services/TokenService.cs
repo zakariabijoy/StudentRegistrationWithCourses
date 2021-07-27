@@ -70,7 +70,7 @@ namespace StudentRegistration.Api.Services
                 UserId = userId,
                 Value = Guid.NewGuid().ToString("N"),
                 CreatedDate = DateTime.Now,
-                ExpiryTime = DateTime.Now.AddMinutes(90)
+                ExpiryTime = DateTime.Now.AddMinutes(double.Parse(_config["RTokenLifeTimeInMinute"]))
             };
         }
 

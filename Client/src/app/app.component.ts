@@ -17,7 +17,16 @@ export class AppComponent implements OnInit {
   }
 
   setCurrentUser() {
-    const user: User = JSON.parse(localStorage.getItem('user'));
-    this.accountService.setCurrentUser(user);
+    if (localStorage.getItem('jwt') === null) {
+      this.accountService.setCurrentUser(null);
+    } else {
+      const jwt = localStorage.getItem('jwt');
+      const userName = localStorage.getItem('userName');
+      const expiration = localStorage.getItem('expiration');
+      const refreshToken = localStorage.getItem('refreshToken');
+      let result = { authToken: { jwt, userName, expiration, refreshToken } };
+      console.log(result);
+      this.accountService.setCurrentUser(result);
+    }
   }
 }

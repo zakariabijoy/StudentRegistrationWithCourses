@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using StudentRegistration.Api.DTOs;
 using StudentRegistration.Api.Services;
 using StudentRegistration.DataAccess.Repository.Interfaces;
@@ -19,11 +20,13 @@ namespace StudentRegistration.Api.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ITokenService _tokenService;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(IUnitOfWork unitOfWork, ITokenService tokenService)
+        public UsersController(IUnitOfWork unitOfWork, ITokenService tokenService, ILogger<UsersController> logger)
         {
             _unitOfWork = unitOfWork;
             _tokenService = tokenService;
+            _logger = logger;
         }
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
@@ -69,9 +72,14 @@ namespace StudentRegistration.Api.Controllers
         //    };
         //}
 
+        /// <summary>
+        /// this method is using for login and generate new jwt token for authentication and also for refresh jwt token
+        /// </summary>
+        /// <param name="model"> TokenRequestDto type take parameters for this method</param>
+        /// <returns>this method return TokenResponse Type and  http status with code </returns>
 
 
-         [HttpPost("Auth")]
+        [HttpPost("Auth")]
         public async Task<IActionResult> Auth([FromBody] TokenRequestDto model) // granttype = "refresh_token"
         {
             // We will return Generic 500 HTTP Server Status Error
@@ -192,7 +200,7 @@ namespace StudentRegistration.Api.Controllers
             }
             catch (Exception ex)
             {
-               
+                _logger.LogError(ex.Message);
                 return new UnauthorizedResult();
             }
         }

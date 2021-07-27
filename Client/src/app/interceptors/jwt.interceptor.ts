@@ -18,6 +18,7 @@ import {
   take,
   tap,
 } from 'rxjs/operators';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
@@ -25,7 +26,7 @@ export class JwtInterceptor implements HttpInterceptor {
 
   tokenSubject: BehaviorSubject<string> = new BehaviorSubject<string>(null);
 
-  constructor(private accountService: AccountService) {}
+  constructor(private accountService: AccountService,private toastr: ToastrService) {}
 
   intercept(
     request: HttpRequest<unknown>,
@@ -39,10 +40,15 @@ export class JwtInterceptor implements HttpInterceptor {
       }),
       catchError((err): Observable<any> => {
         if (err instanceof HttpErrorResponse) {
-          switch ((<HttpErrorResponse>err).status) {
-            case 401:
-              console.log('Token expired. Attempting refresh ...');
-              return this.handleHttpResponseError(request, next);
+          if (err.url === 'https://localhost:44377/api/Users/auth') {
+            this.accountService.logout();
+            this.toastr.warning("login session time out.Please login again");
+          } else {
+            switch ((<HttpErrorResponse>err).status) {
+              case 401:
+                console.log('Token expired. Attempting refresh ...');
+                return this.handleHttpResponseError(request, next);
+            }
           }
         } else {
           return throwError(err);

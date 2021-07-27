@@ -71,6 +71,7 @@ export class AccountService {
       })
       .pipe(
         map((result) => {
+          
           if (result && result.authToken.token) {
             this.loginStatus.next(true);
             localStorage.setItem('loginStatus', '1');
@@ -78,6 +79,7 @@ export class AccountService {
             localStorage.setItem('userName', result.authToken.userName);
             localStorage.setItem('expiration', result.authToken.expiration);
             localStorage.setItem('refreshToken', result.authToken.refreshToken);
+            this.currentUserSource.next(result);
           }
 
           return <any>result;
@@ -85,8 +87,8 @@ export class AccountService {
       );
   }
 
-  setCurrentUser(user: User) {
-    this.currentUserSource.next(user);
+  setCurrentUser(result: any) {
+    this.currentUserSource.next(result);
   }
 
   logout() {
